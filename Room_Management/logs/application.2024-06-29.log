@@ -1,0 +1,602 @@
+2024-06-29 23:29:47.906 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-06-29 23:29:47.935 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.19 on DESKTOP-L2NU8VI with PID 5540 (D:\Room_Management\Room_Management\Room_Management\target\classes started by sarfa in D:\Room_Management\Room_Management\Room_Management)
+2024-06-29 23:29:47.937 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 23:29:47.997 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-29 23:29:47.997 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-29 23:29:49.212 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29 23:29:49.374 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 150 ms. Found 9 JPA repository interfaces.
+2024-06-29 23:29:50.414 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2024-06-29 23:29:50.422 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2024-06-29 23:29:50.424 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 23:29:50.425 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2024-06-29 23:29:50.581 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 23:29:50.582 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2584 ms
+2024-06-29 23:29:50.847 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29 23:29:50.903 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-06-29 23:29:51.046 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-29 23:29:51.163 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-29 23:29:51.464 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-29 23:29:51.481 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2024-06-29 23:29:52.653 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-29 23:29:52.668 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29 23:29:53.704 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29 23:29:54.510 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-29 23:29:54.522 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-29 23:29:54.572 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2024-06-29 23:29:54.602 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2024-06-29 23:29:54.636 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 7.372 seconds (JVM running for 8.1)
+2024-06-29 23:29:57.704 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 23:29:57.705 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 23:29:57.710 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-29 23:29:57.768 [http-nio-2023-exec-1] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:29:57.769 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:30:00.123 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method updatePurchaseItemDetailStatus :
+2024-06-29 23:30:00.139 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:30:00.140 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:30:00.167 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After get the data from groupDataByPoIdentifier :
+2024-06-29 23:30:00.172 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the for loop poIdentifier=PO-F41EC9
+2024-06-29 23:30:00.177 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isApproved IsApproved=false
+2024-06-29 23:30:00.180 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isCancelled isCancelled=false
+2024-06-29 23:30:00.181 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-F41EC9
+2024-06-29 23:30:00.267 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Purchase Item Detail Status : Status=Waiting for Approval
+2024-06-29 23:30:00.346 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-F41EC9
+2024-06-29 23:30:00.356 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\
+2024-06-29 23:30:00.357 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:30:00.357 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-F41EC9
+2024-06-29 23:30:00.368 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=AA, purchaseDate=2023-08-17, modeOfPayment=CASH, purchaseId=PO-F41EC9, userId=USER-4C6ADC, email=abhimaynukumar@gmail.com, paymentStatus=DONE, username=abhimaynukumar, status=Waiting for Approval}
+2024-06-29 23:30:01.663 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf
+2024-06-29 23:30:01.663 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf Identifier=PO-F41EC9 
+2024-06-29 23:30:01.671 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=abhimaynukumar.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\ fileSize=399958339584
+2024-06-29 23:30:01.672 [scheduling-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=abhimaynukumar, fileName=abhimaynukumar.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\, fileSize=399958339584, userIdentifier=USER-4C6ADC, pidIdentifier=PO-F41EC9, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:30:01.737 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf 
+2024-06-29 23:30:01.738 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-F41EC9
+2024-06-29 23:30:01.745 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Email List and GroupName :
+2024-06-29 23:30:01.758 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PO-F41EC9
+Buyer UserName : abhimaynukumar
+Buyer Email : abhimaynukumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf)
+2024-06-29 23:30:01.759 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:01.759 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:07.017 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:07.037 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=abhimaynukumar@gmail.com, msgBody=Purchase Order Id : PO-F41EC9
+Buyer UserName : abhimaynukumar
+Buyer Email : abhimaynukumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf)
+2024-06-29 23:30:07.041 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:07.043 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:08.480 [http-nio-2023-exec-2] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:30:08.481 [http-nio-2023-exec-2] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:30:11.383 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:11.386 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vikashkumar@gmail.com, msgBody=Purchase Order Id : PO-F41EC9
+Buyer UserName : abhimaynukumar
+Buyer Email : abhimaynukumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\abhimaynukumar.pdf)
+2024-06-29 23:30:11.393 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:11.398 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:15.993 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:15.997 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the for loop poIdentifier=PO-273E72
+2024-06-29 23:30:16.001 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isApproved IsApproved=false
+2024-06-29 23:30:16.005 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isCancelled isCancelled=false
+2024-06-29 23:30:16.006 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-273E72
+2024-06-29 23:30:16.040 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Purchase Item Detail Status : Status=Waiting for Approval
+2024-06-29 23:30:16.067 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-273E72
+2024-06-29 23:30:16.068 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\
+2024-06-29 23:30:16.070 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:30:16.071 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-273E72
+2024-06-29 23:30:16.090 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=AA, purchaseDate=2023-08-17, modeOfPayment=CASH, purchaseId=PO-273E72, userId=USER-150511, email=vikashkumar@gmail.com, paymentStatus=DONE, username=vikashkumar, status=Waiting for Approval}
+2024-06-29 23:30:16.217 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf
+2024-06-29 23:30:16.217 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf Identifier=PO-273E72 
+2024-06-29 23:30:16.219 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=vikashkumar.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\ fileSize=399958339584
+2024-06-29 23:30:16.219 [scheduling-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=vikashkumar, fileName=vikashkumar.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\, fileSize=399958339584, userIdentifier=USER-150511, pidIdentifier=PO-273E72, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:30:16.227 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf 
+2024-06-29 23:30:16.227 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-273E72
+2024-06-29 23:30:16.233 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Email List and GroupName :
+2024-06-29 23:30:16.233 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PO-273E72
+Buyer UserName : vikashkumar
+Buyer Email : vikashkumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf)
+2024-06-29 23:30:16.234 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:16.234 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:21.113 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:21.114 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=abhimaynukumar@gmail.com, msgBody=Purchase Order Id : PO-273E72
+Buyer UserName : vikashkumar
+Buyer Email : vikashkumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf)
+2024-06-29 23:30:21.115 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:21.116 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:26.540 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:26.542 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vikashkumar@gmail.com, msgBody=Purchase Order Id : PO-273E72
+Buyer UserName : vikashkumar
+Buyer Email : vikashkumar@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292330\vikashkumar.pdf)
+2024-06-29 23:30:26.544 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:30:26.545 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:30:31.146 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:30:31.149 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the for loop poIdentifier=PO-F08069
+2024-06-29 23:30:31.152 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isApproved IsApproved=true
+2024-06-29 23:30:31.155 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isCancelled isCancelled=false
+2024-06-29 23:30:31.162 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-F08069
+2024-06-29 23:30:31.198 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Purchase Item Detail Status : Status=Approved
+2024-06-29 23:30:31.208 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method processSheetToUpdateNotificationDetailStatus 
+2024-06-29 23:30:31.212 [scheduling-1] INFO  c.i.s.i.DocumentAttachmentServiceImpl - Inside the method getDocumentAttachmentListByStatus 
+2024-06-29 23:30:31.235 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - documentAttachmentList documentAttachmentList=[] documentAttachmentList size=0
+2024-06-29 23:30:33.937 [http-nio-2023-exec-3] INFO  c.i.c.impl.SigInControllerImpl - Inside the method signin username=sarfarazalam password=12345678
+2024-06-29 23:30:33.938 [http-nio-2023-exec-3] INFO  c.inn.service.impl.SigInServiceImpl - Inside the method signin username=sarfarazalam password=12345678
+2024-06-29 23:30:35.904 [http-nio-2023-exec-4] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:30:35.908 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:30:35.909 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:30:54.346 [http-nio-2023-exec-5] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:30:54.347 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:30:57.142 [http-nio-2023-exec-6] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method findAll {}
+2024-06-29 23:30:57.163 [http-nio-2023-exec-6] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findAll {}
+2024-06-29 23:31:24.730 [http-nio-2023-exec-8] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:31:24.735 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:26.595 [http-nio-2023-exec-9] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method findAll {}
+2024-06-29 23:31:26.600 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findAll {}
+2024-06-29 23:31:30.113 [http-nio-2023-exec-10] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:31:30.115 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:38.815 [http-nio-2023-exec-1] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:31:38.816 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:31:38.816 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:43.457 [http-nio-2023-exec-2] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:31:43.459 [http-nio-2023-exec-2] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:31:43.459 [http-nio-2023-exec-2] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:44.759 [http-nio-2023-exec-3] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:31:44.763 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:46.140 [http-nio-2023-exec-4] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method findAll {}
+2024-06-29 23:31:46.148 [http-nio-2023-exec-4] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findAll {}
+2024-06-29 23:31:47.490 [http-nio-2023-exec-5] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:31:47.492 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:31:51.105 [http-nio-2023-exec-6] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:31:51.107 [http-nio-2023-exec-6] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:31:54.223 [http-nio-2023-exec-7] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:31:54.225 [http-nio-2023-exec-7] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:32:00.647 [http-nio-2023-exec-8] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:32:00.649 [http-nio-2023-exec-8] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:33:38.120 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29 23:33:38.130 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-29 23:33:38.161 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-29 23:33:54.094 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-06-29 23:33:54.115 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.19 on DESKTOP-L2NU8VI with PID 18904 (D:\Room_Management\Room_Management\Room_Management\target\classes started by sarfa in D:\Room_Management\Room_Management\Room_Management)
+2024-06-29 23:33:54.118 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 23:33:54.188 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-29 23:33:54.189 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-29 23:33:55.282 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29 23:33:55.443 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 9 JPA repository interfaces.
+2024-06-29 23:33:57.130 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2024-06-29 23:33:57.140 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2024-06-29 23:33:57.145 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 23:33:57.146 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2024-06-29 23:33:57.367 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 23:33:57.368 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3178 ms
+2024-06-29 23:33:57.823 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29 23:33:57.915 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-06-29 23:33:58.236 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-29 23:33:58.468 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-29 23:33:59.066 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-29 23:33:59.089 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2024-06-29 23:34:01.464 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-29 23:34:01.489 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29 23:34:03.331 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29 23:34:04.105 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-29 23:34:04.116 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-29 23:34:04.163 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2024-06-29 23:34:04.193 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2024-06-29 23:34:04.228 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 10.672 seconds (JVM running for 11.397)
+2024-06-29 23:36:17.421 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 23:36:17.422 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 23:36:17.425 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-29 23:36:17.485 [http-nio-2023-exec-1] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:36:17.486 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:37:36.728 [http-nio-2023-exec-3] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:37:36.732 [http-nio-2023-exec-3] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:37:45.159 [http-nio-2023-exec-5] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method create GroupDetail=GroupDetail(id=null, identifier=null, groupName=Room, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:37:45.192 [http-nio-2023-exec-5] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method create GroupDetail=GroupDetail(id=null, identifier=null, groupName=Room, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:37:45.376 [http-nio-2023-exec-6] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:37:45.377 [http-nio-2023-exec-6] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:37:51.115 [http-nio-2023-exec-7] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:37:51.116 [http-nio-2023-exec-7] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:37:59.590 [http-nio-2023-exec-8] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:37:59.592 [http-nio-2023-exec-8] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:38:03.289 [http-nio-2023-exec-9] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:38:03.291 [http-nio-2023-exec-9] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:39:00.201 [http-nio-2023-exec-1] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=sarfarazalam, firstName=Sarfaraz, middleName=, lastName=Alam, emailId=sarfarazalam2702@gmail.com, confirmEmailId=sarfarazalam2702@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:39:00.335 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=sarfarazalam, firstName=Sarfaraz, middleName=, lastName=Alam, emailId=sarfarazalam2702@gmail.com, confirmEmailId=sarfarazalam2702@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:39:00.347 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Group Mappings detail :GroupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)]
+2024-06-29 23:39:00.347 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Group name  :groupName=Room
+2024-06-29 23:39:00.347 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:39:00.351 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8226854405
+2024-06-29 23:39:00.352 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8789519442
+2024-06-29 23:39:00.430 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateUserRegistrationReport username=sarfarazalam
+2024-06-29 23:39:00.431 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateReport username=sarfarazalam
+2024-06-29 23:39:00.437 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\
+2024-06-29 23:39:00.437 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\Registration.jasper
+2024-06-29 23:39:00.438 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2024-06-29 23:39:00.467 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - After set values in parameter  Parameter={active=Yes, gender=Male, password=12345678, altMobileNo=8789519442, groupName=Room, firstName=Sarfaraz, lastName=Alam, mobileNo=8226854405, username=sarfarazalam, dob=2024-06-29, email=sarfarazalam2702@gmail.com, role=ADMIN, identifier=USER-2C42A3, middleName=}
+2024-06-29 23:39:01.789 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\sarfarazalam.pdf
+2024-06-29 23:39:01.791 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method CreateAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\sarfarazalam.pdf Identifier=USER-2C42A3
+2024-06-29 23:39:01.793 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\ fileSize=399958339584
+2024-06-29 23:39:01.794 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=ATT-4FC9BA, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\, fileSize=399958339584, userIdentifier=USER-2C42A3, pidIdentifier=null, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:39:01.834 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method sendEmailToUser Email=sarfarazalam2702@gmail.com FilePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\sarfarazalam.pdf
+2024-06-29 23:39:01.834 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Your user creation over Room Management application has been successfully.
+Username : sarfarazalam
+Password : 12345678
+
+Regards.
+Room Managemant, subject=Regarding New User Registration., attachment=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292339\sarfarazalam.pdf)
+2024-06-29 23:39:01.848 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:39:01.848 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:39:07.037 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:40:00.066 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method updatePurchaseItemDetailStatus :
+2024-06-29 23:40:00.102 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:40:00.106 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:40:00.123 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After get the data from groupDataByPoIdentifier :
+2024-06-29 23:40:00.126 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method processSheetToUpdateNotificationDetailStatus 
+2024-06-29 23:40:00.127 [scheduling-1] INFO  c.i.s.i.DocumentAttachmentServiceImpl - Inside the method getDocumentAttachmentListByStatus 
+2024-06-29 23:40:00.136 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - documentAttachmentList documentAttachmentList=[] documentAttachmentList size=0
+2024-06-29 23:41:34.403 [http-nio-2023-exec-3] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=vivekkumar, firstName=Vivek, middleName=kumar, lastName=singh, emailId=vk930210@gmail.com, confirmEmailId=vk930210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8775854405, alternateMobileNo=6768959441, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:41:34.408 [http-nio-2023-exec-3] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=vivekkumar, firstName=Vivek, middleName=kumar, lastName=singh, emailId=vk930210@gmail.com, confirmEmailId=vk930210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8775854405, alternateMobileNo=6768959441, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:41:34.425 [http-nio-2023-exec-3] INFO  c.i.s.i.UserRegistrationServiceImpl - Group Mappings detail :GroupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)]
+2024-06-29 23:41:34.426 [http-nio-2023-exec-3] INFO  c.i.s.i.UserRegistrationServiceImpl - Group name  :groupName=Room
+2024-06-29 23:41:34.426 [http-nio-2023-exec-3] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:41:34.431 [http-nio-2023-exec-3] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8775854405
+2024-06-29 23:41:34.432 [http-nio-2023-exec-3] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :6768959441
+2024-06-29 23:41:34.432 [http-nio-2023-exec-3] ERROR c.i.s.i.UserRegistrationServiceImpl - Error occured due to Message=Invalid mobile number :
+2024-06-29 23:41:34.441 [http-nio-2023-exec-3] ERROR c.i.c.i.UserRegistrationControllerImpl - Error occured due to Message=Invalid mobile number :
+2024-06-29 23:41:34.475 [http-nio-2023-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.inn.customException.CustomException: Invalid mobile number]
+2024-06-29 23:41:40.754 [http-nio-2023-exec-4] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:41:40.756 [http-nio-2023-exec-4] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:41:46.006 [http-nio-2023-exec-5] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:41:46.007 [http-nio-2023-exec-5] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:41:51.919 [http-nio-2023-exec-6] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:41:51.921 [http-nio-2023-exec-6] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:41:52.911 [http-nio-2023-exec-7] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:41:52.914 [http-nio-2023-exec-7] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:42:01.725 [http-nio-2023-exec-8] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:42:01.726 [http-nio-2023-exec-8] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:42:53.729 [http-nio-2023-exec-9] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=vivek, firstName=vivek, middleName=kumar, lastName=singh, emailId=vk930210@gmail.com, confirmEmailId=vk930210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Fri Jun 21 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:42:53.734 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=vivek, firstName=vivek, middleName=kumar, lastName=singh, emailId=vk930210@gmail.com, confirmEmailId=vk930210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Fri Jun 21 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:42:53.748 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Group Mappings detail :GroupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)]
+2024-06-29 23:42:53.749 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Group name  :groupName=Room
+2024-06-29 23:42:53.750 [http-nio-2023-exec-9] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:42:53.760 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8226854405
+2024-06-29 23:42:53.762 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8789519442
+2024-06-29 23:42:53.784 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateUserRegistrationReport username=vivek
+2024-06-29 23:42:53.784 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateReport username=vivek
+2024-06-29 23:42:53.786 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\
+2024-06-29 23:42:53.790 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\Registration.jasper
+2024-06-29 23:42:53.791 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=vivek
+2024-06-29 23:42:53.797 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - After set values in parameter  Parameter={active=Yes, gender=Male, password=12345678, altMobileNo=8789519442, groupName=Room, firstName=vivek, lastName=singh, mobileNo=8226854405, username=vivek, dob=2024-06-21, email=vk930210@gmail.com, role=ADMIN, identifier=USER-480955, middleName=kumar}
+2024-06-29 23:42:53.889 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\vivek.pdf
+2024-06-29 23:42:53.889 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method CreateAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\vivek.pdf Identifier=USER-480955
+2024-06-29 23:42:53.891 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Detail of files  fileName=vivek.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\ fileSize=399958339584
+2024-06-29 23:42:53.891 [http-nio-2023-exec-9] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=ATT-4CE116, userName=vivek, fileName=vivek.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\, fileSize=399958339584, userIdentifier=USER-480955, pidIdentifier=null, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:42:53.896 [http-nio-2023-exec-9] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method sendEmailToUser Email=vk930210@gmail.com FilePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\vivek.pdf
+2024-06-29 23:42:53.896 [http-nio-2023-exec-9] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk930210@gmail.com, msgBody=Your user creation over Room Management application has been successfully.
+Username : vivek
+Password : 12345678
+
+Regards.
+Room Managemant, subject=Regarding New User Registration., attachment=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292342\vivek.pdf)
+2024-06-29 23:42:53.897 [http-nio-2023-exec-9] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:42:53.897 [http-nio-2023-exec-9] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:42:58.581 [http-nio-2023-exec-9] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:44:47.044 [http-nio-2023-exec-1] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=viveksingh, firstName=Vivek, middleName=kumar, lastName=singh, emailId=vk9030210@gmail.com, confirmEmailId=vk9030210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:44:47.058 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method create UserRegistration=UserRegistration(id=null, identifier=null, userName=viveksingh, firstName=Vivek, middleName=kumar, lastName=singh, emailId=vk9030210@gmail.com, confirmEmailId=vk9030210@gmail.com, password=12345678, confirmPassword=12345678, mobileNo=8226854405, alternateMobileNo=8789519442, dob=Sat Jun 29 05:30:00 IST 2024, gender=Male, role=Admin, isActive=null, createdDate=null, createdTime=null, modifiedDateTime=null, groupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)])
+2024-06-29 23:44:47.073 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Group Mappings detail :GroupMappings=[UserGroupMapping(id=null, groupName=Room, email=null, username=null, user=null)]
+2024-06-29 23:44:47.075 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Group name  :groupName=Room
+2024-06-29 23:44:47.076 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:44:47.084 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8226854405
+2024-06-29 23:44:47.091 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the method validationForMobileNumber :8789519442
+2024-06-29 23:44:47.112 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateUserRegistrationReport username=viveksingh
+2024-06-29 23:44:47.113 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method generateReport username=viveksingh
+2024-06-29 23:44:47.115 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\
+2024-06-29 23:44:47.115 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\Registration.jasper
+2024-06-29 23:44:47.116 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=viveksingh
+2024-06-29 23:44:47.124 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - After set values in parameter  Parameter={active=Yes, gender=Male, password=12345678, altMobileNo=8789519442, groupName=Room, firstName=Vivek, lastName=singh, mobileNo=8226854405, username=viveksingh, dob=2024-06-29, email=vk9030210@gmail.com, role=ADMIN, identifier=USER-5E00AA, middleName=kumar}
+2024-06-29 23:44:47.198 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\viveksingh.pdf
+2024-06-29 23:44:47.199 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method CreateAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\viveksingh.pdf Identifier=USER-5E00AA
+2024-06-29 23:44:47.205 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Detail of files  fileName=viveksingh.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\ fileSize=399958339584
+2024-06-29 23:44:47.205 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=ATT-41F33B, userName=viveksingh, fileName=viveksingh.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\, fileSize=399958339584, userIdentifier=USER-5E00AA, pidIdentifier=null, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:44:47.209 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method sendEmailToUser Email=vk9030210@gmail.com FilePath=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\viveksingh.pdf
+2024-06-29 23:44:47.209 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk9030210@gmail.com, msgBody=Your user creation over Room Management application has been successfully.
+Username : viveksingh
+Password : 12345678
+
+Regards.
+Room Managemant, subject=Regarding New User Registration., attachment=C:\Final_Room_Management\Final_project\Room_Management\UserRegistrationReport\202406292344\viveksingh.pdf)
+2024-06-29 23:44:47.211 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:44:47.211 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:44:52.628 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:46:15.066 [http-nio-2023-exec-3] INFO  c.i.c.impl.SigInControllerImpl - Inside the method signin username=viveksingh password=12345678
+2024-06-29 23:46:15.068 [http-nio-2023-exec-3] INFO  c.inn.service.impl.SigInServiceImpl - Inside the method signin username=viveksingh password=12345678
+2024-06-29 23:46:22.003 [http-nio-2023-exec-4] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:46:22.003 [http-nio-2023-exec-4] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:46:25.355 [http-nio-2023-exec-5] INFO  c.i.c.i.UserGroupMappingControllerImpl - Inside the method findByUsernameByGroupName groupName=Room
+2024-06-29 23:46:25.357 [http-nio-2023-exec-5] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByUsernameByGroupName groupName=Room
+2024-06-29 23:46:25.359 [http-nio-2023-exec-5] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:46:25.429 [http-nio-2023-exec-5] INFO  c.i.s.i.UserGroupMappingServiceImpl - Username List :[sarfarazalam, vivek, viveksingh]
+2024-06-29 23:46:28.671 [http-nio-2023-exec-6] INFO  c.i.c.i.UserGroupMappingControllerImpl - Inside the method findByUsernameByGroupName groupName=Room
+2024-06-29 23:46:28.672 [http-nio-2023-exec-6] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByUsernameByGroupName groupName=Room
+2024-06-29 23:46:28.672 [http-nio-2023-exec-6] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:46:28.701 [http-nio-2023-exec-6] INFO  c.i.s.i.UserGroupMappingServiceImpl - Username List :[sarfarazalam, vivek, viveksingh]
+2024-06-29 23:46:59.651 [http-nio-2023-exec-8] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=viveksingh, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=Room, purchaseDate=2024-06-29, itemDetail=[ItemDetail(id=null, itemName=sugar, price=30.0, quantity=1.0, unitPrice=1.0, unitOfMeasurement=kg, purchaseItemDetail=null)])
+2024-06-29 23:46:59.722 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=viveksingh, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=Room, purchaseDate=2024-06-29, itemDetail=[ItemDetail(id=null, itemName=sugar, price=30.0, quantity=1.0, unitPrice=1.0, unitOfMeasurement=kg, purchaseItemDetail=null)])
+2024-06-29 23:46:59.723 [http-nio-2023-exec-8] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=viveksingh
+2024-06-29 23:46:59.734 [http-nio-2023-exec-8] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:46:59.774 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-42961D
+2024-06-29 23:46:59.776 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\
+2024-06-29 23:46:59.777 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:46:59.777 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-29 23:46:59.785 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=Room, purchaseDate=2024-06-29, modeOfPayment=CASH, purchaseId=PO-42961D, userId=USER-5E00AA, email=vk9030210@gmail.com, paymentStatus=DONE, username=viveksingh, status=Pending}
+2024-06-29 23:46:59.933 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf
+2024-06-29 23:46:59.934 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf Identifier=PO-42961D 
+2024-06-29 23:46:59.937 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=viveksingh.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\ fileSize=399958339584
+2024-06-29 23:46:59.937 [http-nio-2023-exec-8] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=viveksingh, fileName=viveksingh.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\, fileSize=399958339584, userIdentifier=USER-5E00AA, pidIdentifier=PO-42961D, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:46:59.941 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier :=PO-42961D filePath :=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf
+2024-06-29 23:46:59.941 [http-nio-2023-exec-8] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=Room
+2024-06-29 23:46:59.951 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, vk9030210@gmail.com, vk930210@gmail.com]
+2024-06-29 23:46:59.951 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email ::=sarfarazalam2702@gmail.com
+2024-06-29 23:46:59.952 [http-nio-2023-exec-8] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2024-06-29 23:46:59.978 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification niIdentiifer=NI-B7A4ED FilePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf {} 
+2024-06-29 23:46:59.979 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Notification Id : NI-B7A4ED
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf)
+2024-06-29 23:46:59.980 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:46:59.980 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:47:04.620 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:47:04.621 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email ::=vk9030210@gmail.com
+2024-06-29 23:47:04.623 [http-nio-2023-exec-8] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=vk9030210@gmail.com
+2024-06-29 23:47:04.660 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification niIdentiifer=NI-B7A4ED FilePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf {} 
+2024-06-29 23:47:04.666 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk9030210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Notification Id : NI-B7A4ED
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf)
+2024-06-29 23:47:04.668 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:47:04.669 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:47:09.023 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:47:09.025 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email ::=vk930210@gmail.com
+2024-06-29 23:47:09.026 [http-nio-2023-exec-8] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=vk930210@gmail.com
+2024-06-29 23:47:09.072 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification niIdentiifer=NI-B7A4ED FilePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf {} 
+2024-06-29 23:47:09.074 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk930210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Notification Id : NI-B7A4ED
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292346\viveksingh.pdf)
+2024-06-29 23:47:09.077 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:47:09.081 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:47:13.340 [http-nio-2023-exec-8] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:48:08.301 [http-nio-2023-exec-9] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:48:08.302 [http-nio-2023-exec-9] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:48:13.581 [http-nio-2023-exec-10] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:48:13.582 [http-nio-2023-exec-10] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:48:28.660 [http-nio-2023-exec-1] INFO  c.i.c.impl.SigInControllerImpl - Inside the method signin username=viveksingh password=12345678
+2024-06-29 23:48:28.661 [http-nio-2023-exec-1] INFO  c.inn.service.impl.SigInServiceImpl - Inside the method signin username=viveksingh password=12345678
+2024-06-29 23:48:32.068 [http-nio-2023-exec-2] INFO  c.i.c.i.UserRegistrationControllerImpl - Inside the method findAll {}
+2024-06-29 23:48:32.070 [http-nio-2023-exec-2] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findAll {}
+2024-06-29 23:48:38.575 [http-nio-2023-exec-3] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:48:38.579 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:48:46.207 [http-nio-2023-exec-4] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:48:46.208 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:48:46.208 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:48:53.730 [http-nio-2023-exec-5] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:48:53.732 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:09.617 [http-nio-2023-exec-6] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:49:09.620 [http-nio-2023-exec-6] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:49:13.171 [http-nio-2023-exec-7] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method findUniqueAllEmailId 
+2024-06-29 23:49:13.172 [http-nio-2023-exec-7] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findUniqueAllusername 
+2024-06-29 23:49:13.173 [http-nio-2023-exec-7] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:15.242 [http-nio-2023-exec-8] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method findUniqueAllEmailId 
+2024-06-29 23:49:15.244 [http-nio-2023-exec-8] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findUniqueAllusername 
+2024-06-29 23:49:15.245 [http-nio-2023-exec-8] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:16.112 [http-nio-2023-exec-9] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method findUniqueAllEmailId 
+2024-06-29 23:49:16.114 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findUniqueAllPoId 
+2024-06-29 23:49:16.114 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:17.159 [http-nio-2023-exec-10] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method findUniqueAllEmailId 
+2024-06-29 23:49:17.161 [http-nio-2023-exec-10] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findUniqueAllPoId 
+2024-06-29 23:49:17.161 [http-nio-2023-exec-10] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:20.037 [http-nio-2023-exec-1] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method updateNotificationDetailStatusUsernameAndPoIdentifier username=sarfarazalam poIdentifier=PO-42961D status :=Approved
+2024-06-29 23:49:20.039 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method updateNotificationDetailStatusUsernameAndPoIdentifier username=sarfarazalam poIdentifier=PO-42961D status :=Approved
+2024-06-29 23:49:20.039 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByUsernameAndNotificationIdentifier Username=sarfarazalam poIdentifier :=PO-42961D
+2024-06-29 23:49:23.496 [http-nio-2023-exec-2] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:49:23.505 [http-nio-2023-exec-2] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:49:24.474 [http-nio-2023-exec-3] INFO  c.i.c.impl.GroupDetailControllerImpl - Inside the method findAll
+2024-06-29 23:49:24.477 [http-nio-2023-exec-3] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findAll
+2024-06-29 23:49:32.801 [http-nio-2023-exec-4] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:49:32.810 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:49:32.810 [http-nio-2023-exec-4] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:49:41.129 [http-nio-2023-exec-5] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method findAll 
+2024-06-29 23:49:41.130 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:50:00.010 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method updatePurchaseItemDetailStatus :
+2024-06-29 23:50:00.013 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:50:00.015 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:50:00.027 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After get the data from groupDataByPoIdentifier :
+2024-06-29 23:50:00.029 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the for loop poIdentifier=PO-42961D
+2024-06-29 23:50:00.034 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isApproved IsApproved=false
+2024-06-29 23:50:00.040 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isCancelled isCancelled=false
+2024-06-29 23:50:00.040 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-29 23:50:00.080 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Purchase Item Detail Status : Status=Pending
+2024-06-29 23:50:00.092 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-42961D
+2024-06-29 23:50:00.094 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\
+2024-06-29 23:50:00.094 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:50:00.094 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-29 23:50:00.099 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=Room, purchaseDate=2024-06-29, modeOfPayment=CASH, purchaseId=PO-42961D, userId=USER-5E00AA, email=vk9030210@gmail.com, paymentStatus=DONE, username=viveksingh, status=Waiting for Approval}
+2024-06-29 23:50:00.155 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf
+2024-06-29 23:50:00.156 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf Identifier=PO-42961D 
+2024-06-29 23:50:00.158 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=viveksingh.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\ fileSize=399958339584
+2024-06-29 23:50:00.159 [scheduling-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=viveksingh, fileName=viveksingh.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\, fileSize=399958339584, userIdentifier=USER-5E00AA, pidIdentifier=PO-42961D, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-29 23:50:00.165 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf 
+2024-06-29 23:50:00.166 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-42961D
+2024-06-29 23:50:00.172 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Email List and GroupName :
+2024-06-29 23:50:00.173 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf)
+2024-06-29 23:50:00.174 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:50:00.174 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:50:04.842 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:50:04.844 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk9030210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf)
+2024-06-29 23:50:04.845 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:50:04.846 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:50:08.575 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:50:08.576 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk930210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292350\viveksingh.pdf)
+2024-06-29 23:50:08.576 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-29 23:50:08.576 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-29 23:50:12.829 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-29 23:50:12.836 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method processSheetToUpdateNotificationDetailStatus 
+2024-06-29 23:50:12.837 [scheduling-1] INFO  c.i.s.i.DocumentAttachmentServiceImpl - Inside the method getDocumentAttachmentListByStatus 
+2024-06-29 23:50:12.849 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - documentAttachmentList documentAttachmentList=[] documentAttachmentList size=0
+2024-06-29 23:52:29.027 [http-nio-2023-exec-7] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method groupDataByPoIdentifier :
+2024-06-29 23:52:29.028 [http-nio-2023-exec-7] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-29 23:52:29.028 [http-nio-2023-exec-7] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-29 23:55:06.448 [http-nio-2023-exec-9] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method exportNotificationDetailByPoIdentifier POIdentifier=PO-42961D
+2024-06-29 23:55:06.449 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method exportNotificationDetailByPoIdentifier POIdentifier=PO-42961D
+2024-06-29 23:55:06.451 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-42961D
+2024-06-29 23:55:06.464 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - notificationDetails Size notificationDetails size=3
+2024-06-29 23:55:06.464 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method generateExcelReport 
+2024-06-29 23:55:06.470 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292355\
+2024-06-29 23:55:06.471 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\Notification_Detail_Sample.xlsx
+2024-06-29 23:55:07.220 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:55:07.221 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:55:07.227 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:55:07.228 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:55:07.228 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:55:07.228 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:55:07.436 [http-nio-2023-exec-9] INFO  c.i.s.i.NotificationDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292355\NotificationDetailResult.xlsx
+2024-06-29 23:55:07.437 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292355\NotificationDetailResult.xlsx
+2024-06-29 23:55:07.437 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - downloadFile fileName : NotificationDetailResult.xlsx
+2024-06-29 23:56:11.118 [http-nio-2023-exec-1] INFO  c.i.c.i.NotificationDetailControllerImpl - Inside the method exportNotificationDetailByPoIdentifier POIdentifier=PO-42961D
+2024-06-29 23:56:11.119 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method exportNotificationDetailByPoIdentifier POIdentifier=PO-42961D
+2024-06-29 23:56:11.119 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-42961D
+2024-06-29 23:56:11.127 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - notificationDetails Size notificationDetails size=3
+2024-06-29 23:56:11.129 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method generateExcelReport 
+2024-06-29 23:56:11.130 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292356\
+2024-06-29 23:56:11.131 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\Notification_Detail_Sample.xlsx
+2024-06-29 23:56:11.197 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:56:11.197 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:56:11.197 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:56:11.197 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:56:11.198 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the for loop ...
+2024-06-29 23:56:11.198 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method 
+2024-06-29 23:56:11.249 [http-nio-2023-exec-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292356\NotificationDetailResult.xlsx
+2024-06-29 23:56:11.249 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\NotificationReport\202406292356\NotificationDetailResult.xlsx
+2024-06-29 23:56:11.249 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - downloadFile fileName : NotificationDetailResult.xlsx
+2024-06-29 23:57:55.372 [http-nio-2023-exec-3] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:55.372 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:55.373 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:55.375 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:55.375 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:55.376 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:55.379 [http-nio-2023-exec-3] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:55.380 [http-nio-2023-exec-3] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:55.380 [http-nio-2023-exec-3] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:55.381 [http-nio-2023-exec-3] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:57.720 [http-nio-2023-exec-4] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:57.721 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:57.722 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:57.724 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:57.725 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:57.726 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:57.735 [http-nio-2023-exec-4] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:57.736 [http-nio-2023-exec-4] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:57.737 [http-nio-2023-exec-4] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:57.738 [http-nio-2023-exec-4] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:58.548 [http-nio-2023-exec-5] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.550 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.551 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:58.553 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.554 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:58.556 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:58.568 [http-nio-2023-exec-5] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.569 [http-nio-2023-exec-5] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.570 [http-nio-2023-exec-5] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:58.571 [http-nio-2023-exec-5] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:58.725 [http-nio-2023-exec-6] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.726 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.727 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:58.727 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.728 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:58.728 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:58.735 [http-nio-2023-exec-6] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.736 [http-nio-2023-exec-6] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.737 [http-nio-2023-exec-6] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:58.738 [http-nio-2023-exec-6] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:58.817 [http-nio-2023-exec-7] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.817 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.819 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:58.819 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.819 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:58.819 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:58.822 [http-nio-2023-exec-7] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.824 [http-nio-2023-exec-7] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.824 [http-nio-2023-exec-7] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:58.824 [http-nio-2023-exec-7] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:58.957 [http-nio-2023-exec-8] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.957 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:58.958 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:58.958 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.958 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:58.959 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:58.962 [http-nio-2023-exec-8] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.962 [http-nio-2023-exec-8] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:58.962 [http-nio-2023-exec-8] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:58.963 [http-nio-2023-exec-8] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:59.172 [http-nio-2023-exec-9] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.172 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.173 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:59.174 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.174 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:59.175 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:59.182 [http-nio-2023-exec-9] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.182 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.183 [http-nio-2023-exec-9] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:59.184 [http-nio-2023-exec-9] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:59.301 [http-nio-2023-exec-10] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.301 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.301 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:59.302 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.303 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:59.303 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:59.305 [http-nio-2023-exec-10] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.306 [http-nio-2023-exec-10] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.306 [http-nio-2023-exec-10] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:59.306 [http-nio-2023-exec-10] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:57:59.567 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.568 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method downloadPdfReportByIdentifier identifier=PO-B6F2E4 
+2024-06-29 23:57:59.568 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-B6F2E4
+2024-06-29 23:57:59.569 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.570 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:57:59.571 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-B6F2E4
+2024-06-29 23:57:59.579 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.580 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - Inside the downloadFile  :C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357\
+2024-06-29 23:57:59.580 [http-nio-2023-exec-1] INFO  com.inn.utils.RoomUtil - downloadFile fileName : 202406292357
+2024-06-29 23:57:59.583 [http-nio-2023-exec-1] ERROR com.inn.utils.RoomUtil - Error inside downloadFile : C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292357 (Access is denied)
+2024-06-29 23:58:25.473 [http-nio-2023-exec-2] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method exportPdfReportByIdentifier identifier=PO-42961D 
+2024-06-29 23:58:25.474 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method exportPdfReportByIdentifier Identifier :=PO-42961D 
+2024-06-29 23:58:25.474 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-42961D
+2024-06-29 23:58:25.477 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292358\
+2024-06-29 23:58:25.478 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-29 23:58:25.478 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-29 23:58:25.491 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=Room, purchaseDate=2024-06-29, modeOfPayment=CASH, purchaseId=PO-42961D, userId=USER-5E00AA, email=vk9030210@gmail.com, paymentStatus=DONE, username=viveksingh, status=Waiting for Approval}
+2024-06-29 23:58:25.555 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406292358\viveksingh.pdf

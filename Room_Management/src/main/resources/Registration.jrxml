@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Registration" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aab83650-27cb-481e-b799-5b73155094f0">
+	<parameter name="username" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="firstName" class="java.lang.String"/>
+	<parameter name="middleName" class="java.lang.String"/>
+	<parameter name="lastName" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="role" class="java.lang.String"/>
+	<parameter name="identifier" class="java.lang.String"/>
+	<parameter name="dob" class="java.lang.String"/>
+	<parameter name="password" class="java.lang.String"/>
+	<parameter name="mobileNo" class="java.lang.String"/>
+	<parameter name="altMobileNo" class="java.lang.String"/>
+	<parameter name="active" class="java.lang.String"/>
+	<parameter name="groupName" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="89" backcolor="#7D7979" uuid="2477b7c3-f12f-4e89-82f0-c26ba1e84606"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="106" y="24" width="590" height="56" forecolor="#FFFFFF" uuid="c51a988f-156a-462c-880e-8cda3bd8946b"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ROOM MANAGEMENT]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="8" y="10" width="112" height="30" forecolor="#FAF0F0" uuid="2ec07afb-5a3c-4347-bc5b-8f8b82848bdb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="381" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="20" width="100" height="30" forecolor="#F74340" uuid="5889f1d1-314f-411e-b035-02ef62230f5b"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USER NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="70" width="100" height="30" forecolor="#F74340" uuid="f3f98b77-f5aa-4e61-8e8f-7bdfb5a63fc8"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="230" width="100" height="30" uuid="b4ff88c5-7eda-4eb8-9f44-d5b5104d53ff"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALT MOBILE NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="180" width="100" height="30" uuid="b047e5de-dc45-41b7-bdbe-e4a956769a9e"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOBILE NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="130" width="100" height="30" uuid="4a0b3fd9-d96b-443b-9103-2bc94a816c44"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSWORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="70" width="100" height="30" uuid="2e6e0387-7a96-46b5-9d83-f0f86c7e4b57"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D.O.B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="20" width="100" height="30" forecolor="#F74340" uuid="b9a68630-27ea-40c5-b907-a8651a8da55e"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFIER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="130" width="100" height="30" uuid="a4faed52-0ca1-4ba6-a66e-0eb94e7057ba"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIRST NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="180" width="140" height="30" uuid="4c8f0a4f-b23a-4106-bead-ac4f19b0db2c"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MIDDLE NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="230" width="100" height="30" uuid="0d3976b6-36b8-4f3b-96f0-8bc5b35c5588"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAST NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="280" width="100" height="30" uuid="54468662-d963-47e2-b4ab-12179f268e69"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENDER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="280" width="100" height="30" uuid="d7eb2517-e857-47ea-97fb-e27dd9b94f6a"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACTIVE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="330" width="100" height="30" uuid="e5ecbfd5-e8c4-4223-8853-2ebceb09781d"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ROLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="320" width="110" height="50" uuid="53e2c7e5-282d-49f8-bca7-e0656f4aafe1"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GROUP_NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="130" width="220" height="30" uuid="1ba10e60-4296-4b42-bc5b-45d97f39d7a5"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="180" width="220" height="30" uuid="e513bcf4-60ae-4ac7-be05-ee05cb87268a"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{middleName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="230" width="220" height="30" uuid="f1fd396d-5c8c-468f-8c50-a8948980d8ae"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="280" width="220" height="30" uuid="1fc8e1c6-ce5d-4db0-b351-5657db1a559e"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="330" width="220" height="30" uuid="4fd32ac1-8166-4b49-8379-86b828452996"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{role}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="596" y="20" width="184" height="30" forecolor="#F74340" uuid="c543d8b0-0e9c-4479-bad0-504430ba0255"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{identifier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="596" y="70" width="184" height="30" uuid="8cbb8fdc-2c3d-4348-aae3-fb2de926f3a6"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="130" width="180" height="30" uuid="a4f00666-919a-46f2-bd9f-d8f37b47cf61"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="180" width="180" height="30" uuid="fd868880-6903-4c3b-a681-0bb9985bf40d"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="230" width="180" height="30" uuid="eb842c01-3eb4-4fdc-8a20-2abe774ba392"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{altMobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="280" width="180" height="30" uuid="377dcb76-5299-49d5-a4bf-771c0b505ba0"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{active}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="320" width="180" height="50" uuid="a362dee7-2c1b-42cb-9462-09e12bda4d64"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{groupName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="70" width="290" height="50" forecolor="#F74340" uuid="48a3d2c7-7cf1-47c9-bd64-f3b187667f0e"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="20" width="220" height="30" forecolor="#F74340" uuid="b55f13e3-7195-4413-9f19-58110e2f9ed3"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{username}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="82" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="82" backcolor="#7D7979" uuid="12257039-cf40-4d6b-a7ae-0de74862b654"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="80" y="26" width="630" height="44" forecolor="#FFF7F7" uuid="f75ccfba-dab5-41fa-9eb1-7ccf7ae34b39"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[This is system generated slip and does not require signature.Generated by Room Management.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

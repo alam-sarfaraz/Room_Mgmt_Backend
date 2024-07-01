@@ -1,0 +1,974 @@
+2023-08-27 21:22:04.775 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-27 21:22:04.797 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:22:04.821 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:22:04.889 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-27 21:22:04.890 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-27 21:22:06.491 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:22:06.666 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:22:09.709 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:22:09.719 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:22:09.721 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:22:09.722 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:22:09.867 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:22:09.867 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4977 ms
+2023-08-27 21:22:10.194 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:22:10.267 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-27 21:22:10.430 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-27 21:22:10.584 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-27 21:22:10.922 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-27 21:22:10.938 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:22:12.065 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:22:12.076 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:22:13.147 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:22:13.858 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:22:13.867 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:22:13.911 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:22:13.938 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:22:13.963 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 10.242 seconds (JVM running for 11.777)
+2023-08-27 21:22:27.515 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:22:27.516 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:22:27.517 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-27 21:22:27.662 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:22:27.685 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:22:27.692 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:22:27.782 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:22:27.877 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-C80387
+2023-08-27 21:22:27.879 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\
+2023-08-27 21:22:27.879 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:22:27.880 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-C80387
+2023-08-27 21:22:27.889 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-C80387, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:22:29.250 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf
+2023-08-27 21:22:29.251 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf Identifier=PID-C80387 
+2023-08-27 21:22:29.258 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\ fileSize=510770802688
+2023-08-27 21:22:29.259 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-C80387, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:22:29.273 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-C80387 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf
+2023-08-27 21:22:29.274 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:22:29.290 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:22:29.291 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:22:29.291 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:22:29.328 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-68B119 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf {} 
+2023-08-27 21:22:29.330 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Buyer UserName :
+sarfarazalam
+Buyer Email :
+sarfarazalam2702@gmail.com. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf)
+2023-08-27 21:22:29.330 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:22:29.330 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:22:34.548 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:22:34.549 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:22:34.549 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:22:34.576 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-68B119 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf {} 
+2023-08-27 21:22:34.583 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Buyer UserName :
+sarfarazalam
+Buyer Email :
+sarfarazalam2702@gmail.com. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272122\sarfarazalam.pdf)
+2023-08-27 21:22:34.584 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:22:34.584 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:22:38.961 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:23:22.867 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:23:25.692 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:25.693 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:23:25.695 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:23:25.700 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:25.707 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:25.735 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:23:25.743 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-27 21:23:25.762 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-27 21:23:25.910 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:23:25.911 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:23:26.426 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:23:26.527 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:23:26.700 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:23:26.701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:26.701 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:23:26.702 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:23:26.769 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:23:26.770 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 855 ms
+2023-08-27 21:23:26.899 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:23:26.911 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-08-27 21:23:26.964 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-08-27 21:23:26.966 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:23:27.198 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:23:27.198 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:23:27.574 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:23:27.750 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:23:27.754 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:23:27.771 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:27.776 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:23:27.786 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.941 seconds (JVM running for 85.599)
+2023-08-27 21:23:27.792 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:23:45.177 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:23:47.446 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:47.446 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:23:47.452 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:47.455 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:47.459 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:23:47.460 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-08-27 21:23:47.475 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-08-27 21:23:47.617 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:23:47.618 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:23:48.081 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:23:48.175 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:23:48.314 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:23:48.316 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:48.317 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:23:48.317 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:23:48.369 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:23:48.370 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 749 ms
+2023-08-27 21:23:48.451 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:23:48.460 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-08-27 21:23:48.499 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-08-27 21:23:48.500 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:23:48.729 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:23:48.730 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:23:49.114 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:23:49.276 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:23:49.281 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:23:49.297 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:23:49.301 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:23:49.313 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.757 seconds (JVM running for 107.126)
+2023-08-27 21:23:49.314 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:24:22.960 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:24:22.961 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:24:22.963 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-27 21:24:22.969 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:24:22.979 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:24:22.982 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:24:22.990 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:24:23.016 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-56512E
+2023-08-27 21:24:23.018 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\
+2023-08-27 21:24:23.019 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:24:23.019 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-56512E
+2023-08-27 21:24:23.026 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-56512E, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:24:23.175 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf
+2023-08-27 21:24:23.175 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf Identifier=PID-56512E 
+2023-08-27 21:24:23.179 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\ fileSize=510770802688
+2023-08-27 21:24:23.180 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-56512E, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:24:23.188 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-56512E filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf
+2023-08-27 21:24:23.189 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:24:23.196 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:24:23.197 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:24:23.197 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:24:23.216 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-788F76 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf {} 
+2023-08-27 21:24:23.217 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf)
+2023-08-27 21:24:23.217 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:24:23.217 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:24:27.772 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:24:27.772 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:24:27.772 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:24:27.796 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-788F76 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf {} 
+2023-08-27 21:24:27.796 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272124\sarfarazalam.pdf)
+2023-08-27 21:24:27.796 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:24:27.796 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:24:32.461 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:24:57.747 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:25:00.398 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:00.398 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:25:00.399 [Thread-11] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:25:00.402 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:00.405 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:00.409 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:25:00.410 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2023-08-27 21:25:00.421 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2023-08-27 21:25:00.568 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:25:00.571 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:25:00.988 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:25:01.048 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:25:01.143 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:25:01.143 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:01.144 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:25:01.144 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:25:01.179 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:25:01.179 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 599 ms
+2023-08-27 21:25:01.249 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:25:01.258 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2023-08-27 21:25:01.285 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2023-08-27 21:25:01.286 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:25:01.447 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:25:01.447 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:25:01.767 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:25:01.916 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:25:01.920 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:25:01.935 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:01.942 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:25:01.953 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.454 seconds (JVM running for 179.767)
+2023-08-27 21:25:01.957 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:25:49.068 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:25:51.541 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:51.541 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:25:51.546 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:51.548 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:51.551 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:25:51.553 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2023-08-27 21:25:51.562 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2023-08-27 21:25:51.726 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:25:51.726 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:25:52.161 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:25:52.238 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:25:52.370 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:25:52.371 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:52.371 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:25:52.372 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:25:52.423 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:25:52.423 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 695 ms
+2023-08-27 21:25:52.505 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:25:52.514 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2023-08-27 21:25:52.551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2023-08-27 21:25:52.551 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:25:52.730 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:25:52.730 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:25:53.089 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:25:53.286 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:25:53.289 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:25:53.300 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:25:53.309 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:25:53.322 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.658 seconds (JVM running for 231.136)
+2023-08-27 21:25:53.325 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:25:57.920 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:25:57.921 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:25:57.924 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-27 21:25:57.933 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:25:57.952 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:25:57.956 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:25:57.966 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:25:57.998 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-96F3BA
+2023-08-27 21:25:58.000 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\
+2023-08-27 21:25:58.000 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:25:58.001 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-96F3BA
+2023-08-27 21:25:58.005 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-96F3BA, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:25:58.161 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf
+2023-08-27 21:25:58.161 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf Identifier=PID-96F3BA 
+2023-08-27 21:25:58.164 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\ fileSize=510770802688
+2023-08-27 21:25:58.165 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-96F3BA, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:25:58.176 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-96F3BA filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf
+2023-08-27 21:25:58.176 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:25:58.181 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:25:58.182 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:25:58.182 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:25:58.200 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-1E0E55 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf {} 
+2023-08-27 21:25:58.201 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf)
+2023-08-27 21:25:58.201 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:25:58.202 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:26:02.726 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:26:02.726 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:26:02.726 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:26:02.741 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-1E0E55 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf {} 
+2023-08-27 21:26:02.742 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272125\sarfarazalam.pdf)
+2023-08-27 21:26:02.742 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:26:02.743 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:26:06.919 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:26:25.386 [http-nio-2023-exec-2] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:26:25.387 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:26:25.388 [http-nio-2023-exec-2] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:26:25.398 [http-nio-2023-exec-2] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:26:25.416 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-FBF1E6
+2023-08-27 21:26:25.417 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\
+2023-08-27 21:26:25.418 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:26:25.418 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-FBF1E6
+2023-08-27 21:26:25.420 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-FBF1E6, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:26:25.548 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf
+2023-08-27 21:26:25.549 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf Identifier=PID-FBF1E6 
+2023-08-27 21:26:25.551 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\ fileSize=510770802688
+2023-08-27 21:26:25.551 [http-nio-2023-exec-2] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-FBF1E6, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:26:25.555 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-FBF1E6 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf
+2023-08-27 21:26:25.556 [http-nio-2023-exec-2] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:26:25.558 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:26:25.558 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:26:25.558 [http-nio-2023-exec-2] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:26:25.568 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-A8B8DE filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf {} 
+2023-08-27 21:26:25.576 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf)
+2023-08-27 21:26:25.581 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:26:25.582 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:26:29.815 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:26:29.816 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:26:29.816 [http-nio-2023-exec-2] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:26:29.839 [http-nio-2023-exec-2] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-A8B8DE filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf {} 
+2023-08-27 21:26:29.840 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+. Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272126\sarfarazalam.pdf)
+2023-08-27 21:26:29.840 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:26:29.841 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:26:34.192 [http-nio-2023-exec-2] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:27:18.478 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:27:21.612 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:27:21.612 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:27:21.614 [Thread-19] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:27:21.618 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:27:21.621 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:27:21.625 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:27:21.626 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2023-08-27 21:27:21.637 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2023-08-27 21:27:21.789 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:27:21.790 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:27:22.186 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:27:22.264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:27:22.412 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:27:22.413 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:27:22.414 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:27:22.414 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:27:22.479 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:27:22.480 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 688 ms
+2023-08-27 21:27:22.576 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:27:22.587 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2023-08-27 21:27:22.614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2023-08-27 21:27:22.615 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:27:22.787 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:27:22.787 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:27:23.117 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:27:23.269 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:27:23.273 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:27:23.291 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:27:23.296 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:27:23.308 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.573 seconds (JVM running for 321.121)
+2023-08-27 21:27:23.311 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:28:14.602 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:28:16.923 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:28:16.923 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:28:16.928 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:28:16.931 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:28:16.934 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:28:16.935 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2023-08-27 21:28:16.943 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2023-08-27 21:28:17.096 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:28:17.096 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:28:17.501 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:28:17.595 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:28:17.731 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:28:17.732 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:28:17.732 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:28:17.732 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:28:17.774 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:28:17.774 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 675 ms
+2023-08-27 21:28:17.858 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:28:17.868 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2023-08-27 21:28:17.904 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2023-08-27 21:28:17.904 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:28:18.037 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:28:18.038 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:28:18.359 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:28:18.509 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:28:18.513 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:28:18.529 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:28:18.533 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:28:18.545 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.507 seconds (JVM running for 376.358)
+2023-08-27 21:28:18.548 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:29:01.960 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:29:01.961 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:29:01.962 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-27 21:29:01.969 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:29:01.976 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:29:01.981 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:29:01.987 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:29:02.014 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-72EF99
+2023-08-27 21:29:02.016 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\
+2023-08-27 21:29:02.017 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:29:02.017 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-72EF99
+2023-08-27 21:29:02.020 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-72EF99, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:29:02.146 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf
+2023-08-27 21:29:02.147 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf Identifier=PID-72EF99 
+2023-08-27 21:29:02.151 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\ fileSize=510770802688
+2023-08-27 21:29:02.151 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-72EF99, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:29:02.158 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-72EF99 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf
+2023-08-27 21:29:02.159 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:29:02.163 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:29:02.164 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:29:02.164 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:29:02.178 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-69412B filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf {} 
+2023-08-27 21:29:02.178 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id :ND-69412B
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf)
+2023-08-27 21:29:02.178 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:29:02.178 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:29:07.661 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:29:07.661 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:29:07.662 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:29:07.685 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-69412B filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf {} 
+2023-08-27 21:29:07.685 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Purchase Order Id :ND-69412B
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272129\sarfarazalam.pdf)
+2023-08-27 21:29:07.686 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:29:07.686 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:29:12.100 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:30:42.019 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:30:44.526 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:30:44.526 [Thread-27] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:30:44.528 [Thread-27] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:30:44.533 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:30:44.536 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:30:44.539 [Thread-27] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:30:44.540 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2023-08-27 21:30:44.549 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2023-08-27 21:30:44.732 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:30:44.733 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:30:45.133 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:30:45.195 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:30:45.318 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:30:45.319 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:30:45.319 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:30:45.319 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:30:45.364 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:30:45.365 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 630 ms
+2023-08-27 21:30:45.444 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:30:45.452 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2023-08-27 21:30:45.483 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2023-08-27 21:30:45.483 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:30:45.665 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:30:45.665 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:30:46.017 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:30:46.158 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:30:46.163 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:30:46.180 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:30:46.184 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:30:46.196 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.528 seconds (JVM running for 524.009)
+2023-08-27 21:30:46.198 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:31:38.639 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:31:40.921 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:31:40.922 [Thread-31] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:31:40.927 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:31:40.929 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:31:40.932 [Thread-31] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:31:40.934 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2023-08-27 21:31:40.946 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2023-08-27 21:31:41.107 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:31:41.108 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:31:41.535 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:31:41.639 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:31:41.787 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:31:41.787 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:31:41.788 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:31:41.789 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:31:41.830 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:31:41.830 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 720 ms
+2023-08-27 21:31:41.914 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:31:41.924 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2023-08-27 21:31:41.953 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2023-08-27 21:31:41.953 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:31:42.094 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:31:42.094 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:31:42.431 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:31:42.589 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:31:42.593 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:31:42.607 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:31:42.613 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:31:42.630 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.573 seconds (JVM running for 580.443)
+2023-08-27 21:31:42.634 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:31:52.980 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:31:52.981 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:31:52.982 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-27 21:31:52.988 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:31:53.004 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:31:53.012 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:31:53.019 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:31:53.047 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-746CC4
+2023-08-27 21:31:53.049 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\
+2023-08-27 21:31:53.050 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:31:53.050 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-746CC4
+2023-08-27 21:31:53.053 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-746CC4, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:31:53.215 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf
+2023-08-27 21:31:53.216 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf Identifier=PID-746CC4 
+2023-08-27 21:31:53.219 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\ fileSize=510770802688
+2023-08-27 21:31:53.219 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-746CC4, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:31:53.225 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-746CC4 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf
+2023-08-27 21:31:53.225 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:31:53.230 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:31:53.231 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:31:53.231 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:31:53.245 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-3DAACD filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf {} 
+2023-08-27 21:31:53.246 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PID-746CC4Notification Id : ND-3DAACD
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf)
+2023-08-27 21:31:53.246 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:31:53.246 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:31:57.733 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:31:57.733 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:31:57.734 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:31:57.747 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-3DAACD filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf {} 
+2023-08-27 21:31:57.747 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Purchase Order Id : PID-746CC4Notification Id : ND-3DAACD
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272131\sarfarazalam.pdf)
+2023-08-27 21:31:57.747 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:31:57.747 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:32:02.019 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:32:46.548 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:32:49.147 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:32:49.148 [Thread-35] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:32:49.150 [Thread-35] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:32:49.153 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:32:49.156 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:32:49.159 [Thread-35] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:32:49.161 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2023-08-27 21:32:49.169 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2023-08-27 21:32:49.336 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:32:49.337 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:32:49.781 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:32:49.894 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:32:50.002 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:32:50.002 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:32:50.003 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:32:50.003 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:32:50.051 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:32:50.052 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 712 ms
+2023-08-27 21:32:50.122 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:32:50.131 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2023-08-27 21:32:50.160 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2023-08-27 21:32:50.161 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:32:50.348 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:32:50.349 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:32:50.713 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:32:50.900 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:32:50.904 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:32:50.921 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:32:50.925 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:32:50.943 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 1.659 seconds (JVM running for 648.756)
+2023-08-27 21:32:50.947 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:32:50.997 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:32:50.998 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:32:51.000 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-27 21:32:51.007 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:32:51.018 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:32:51.022 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:32:51.031 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:32:51.057 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-53C5F4
+2023-08-27 21:32:51.059 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\
+2023-08-27 21:32:51.060 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:32:51.061 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-53C5F4
+2023-08-27 21:32:51.066 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-53C5F4, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:32:51.199 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf
+2023-08-27 21:32:51.199 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf Identifier=PID-53C5F4 
+2023-08-27 21:32:51.204 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\ fileSize=510770802688
+2023-08-27 21:32:51.204 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-53C5F4, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:32:51.212 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-53C5F4 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf
+2023-08-27 21:32:51.212 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:32:51.217 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:32:51.217 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:32:51.218 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:32:51.234 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-50A790 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf {} 
+2023-08-27 21:32:51.235 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PID-53C5F4
+Notification Id : ND-50A790
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf)
+2023-08-27 21:32:51.235 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:32:51.235 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:32:55.878 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:32:55.879 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:32:55.880 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:32:55.912 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-50A790 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf {} 
+2023-08-27 21:32:55.912 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Purchase Order Id : PID-53C5F4
+Notification Id : ND-50A790
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272132\sarfarazalam.pdf)
+2023-08-27 21:32:55.913 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:32:55.915 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:33:00.282 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:35:12.552 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:35:17.634 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:35:17.635 [Thread-39] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:35:17.637 [Thread-39] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:35:17.643 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:35:17.648 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:35:17.654 [Thread-39] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:35:17.657 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2023-08-27 21:35:17.684 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2023-08-27 21:35:18.005 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:35:18.006 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:35:19.029 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:35:19.182 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:35:19.433 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:35:19.435 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:35:19.436 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:35:19.436 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:35:19.547 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:35:19.547 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1535 ms
+2023-08-27 21:35:19.756 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:35:19.777 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2023-08-27 21:35:19.858 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2023-08-27 21:35:19.859 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:35:20.273 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:35:20.274 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:35:20.971 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:35:21.307 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:35:21.314 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:35:21.356 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:35:21.375 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:35:21.401 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.506 seconds (JVM running for 799.215)
+2023-08-27 21:35:21.407 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:35:25.942 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:35:25.944 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:35:25.947 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-08-27 21:35:25.961 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:35:25.975 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:35:25.983 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:35:25.993 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:35:26.050 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-E79F40
+2023-08-27 21:35:26.053 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\
+2023-08-27 21:35:26.055 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:35:26.056 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-E79F40
+2023-08-27 21:35:26.062 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-E79F40, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:35:26.322 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf
+2023-08-27 21:35:26.323 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf Identifier=PID-E79F40 
+2023-08-27 21:35:26.332 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\ fileSize=510770802688
+2023-08-27 21:35:26.333 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-E79F40, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:35:26.345 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-E79F40 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf
+2023-08-27 21:35:26.346 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:35:26.356 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:35:26.357 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:35:26.357 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:35:26.391 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-54BEF4 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf {} 
+2023-08-27 21:35:26.392 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PID-E79F40
+Notification Id : ND-54BEF4
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf)
+2023-08-27 21:35:26.393 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:35:26.394 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:35:31.455 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:35:31.456 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:35:31.456 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:35:31.483 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-54BEF4 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf {} 
+2023-08-27 21:35:31.484 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=Purchase Order Id : PID-E79F40
+Notification Id : ND-54BEF4
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272135\sarfarazalam.pdf)
+2023-08-27 21:35:31.486 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:35:31.488 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:35:36.145 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:38:15.862 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:38:22.166 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:38:22.167 [Thread-43] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:38:22.168 [Thread-43] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:38:22.175 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:38:22.183 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:38:22.188 [Thread-43] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:38:22.192 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2023-08-27 21:38:22.224 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2023-08-27 21:38:22.544 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:38:22.544 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:38:23.457 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:38:23.638 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:38:23.880 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:38:23.881 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:38:23.882 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:38:23.882 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:38:23.963 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:38:23.964 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1415 ms
+2023-08-27 21:38:24.151 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:38:24.174 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2023-08-27 21:38:24.235 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2023-08-27 21:38:24.236 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:38:24.526 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:38:24.527 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:38:25.198 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:38:25.439 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:38:25.445 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:38:25.468 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:38:25.475 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:38:25.497 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.052 seconds (JVM running for 983.31)
+2023-08-27 21:38:25.502 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:38:35.347 [http-nio-2023-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 21:38:35.349 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-27 21:38:35.355 [http-nio-2023-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-08-27 21:38:35.377 [http-nio-2023-exec-1] INFO  c.i.c.i.PurchaseItemDetailControllerImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:38:35.401 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method create PurchaseItemDetail=PurchaseItemDetail(id=null, identifier=null, userName=sarfarazalam, emailId=null, userIdentifier=null, createdDate=null, createdTime=null, modifiedDate=null, modifiedTime=null, month=null, day=null, modeOfPayment=CASH, paymentStatus=DONE, status=null, groupName=AA, purchaseDate=2023-08-17, itemDetail=[ItemDetail(id=null, itemName=Sugar, price=50.0, quantity=1.0, unitPrice=50.0, unitOfMeasurement=kg, purchaseItemDetail=null), ItemDetail(id=null, itemName=BISCUIT, price=50.0, quantity=5.0, unitPrice=10.0, unitOfMeasurement=Packet, purchaseItemDetail=null), ItemDetail(id=null, itemName=Oil, price=150.0, quantity=1.0, unitPrice=150.0, unitOfMeasurement=litre, purchaseItemDetail=null)])
+2023-08-27 21:38:35.410 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByUsername Username=sarfarazalam
+2023-08-27 21:38:35.422 [http-nio-2023-exec-1] INFO  c.i.s.impl.GroupDetailServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:38:35.467 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PID-0524B6
+2023-08-27 21:38:35.470 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\
+2023-08-27 21:38:35.470 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=C:\Final_Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2023-08-27 21:38:35.471 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PID-0524B6
+2023-08-27 21:38:35.476 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={userId=USER-1EB0DA, modeOfPayment=CASH, purchaseId=PID-0524B6, username=sarfarazalam, purchaseDate=2023-08-17, paymentStatus=DONE, email=sarfarazalam2702@gmail.com, groupName=AA, status=Pending}
+2023-08-27 21:38:35.766 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf
+2023-08-27 21:38:35.767 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf Identifier=PID-0524B6 
+2023-08-27 21:38:35.772 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=sarfarazalam.pdf filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\ fileSize=510770802688
+2023-08-27 21:38:35.773 [http-nio-2023-exec-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=sarfarazalam, fileName=sarfarazalam.pdf, filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\, fileSize=510770802688, userIdentifier=USER-1EB0DA, pidIdentifier=PID-0524B6, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2023-08-27 21:38:35.783 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Path and identifier :Identifier=PID-0524B6 filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf
+2023-08-27 21:38:35.784 [http-nio-2023-exec-1] INFO  c.i.s.i.UserGroupMappingServiceImpl - Inside the method findByGroupName GroupName=AA
+2023-08-27 21:38:35.790 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - email Id List emailList=[sarfarazalam2702@gmail.com, sarfarazalam2702@gmail.com1]
+2023-08-27 21:38:35.791 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com
+2023-08-27 21:38:35.791 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com
+2023-08-27 21:38:35.815 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-91C28E filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf {} 
+2023-08-27 21:38:35.816 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=<span style = 'color :red'> Purchase Order Id : </span>PID-0524B6
+Notification Id : ND-91C28E
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf)
+2023-08-27 21:38:35.816 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:38:35.817 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:38:40.354 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:38:40.354 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - EmailId :Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:38:40.354 [http-nio-2023-exec-1] INFO  c.i.s.i.UserRegistrationServiceImpl - Inside the method findByEmail Email=sarfarazalam2702@gmail.com1
+2023-08-27 21:38:40.379 [http-nio-2023-exec-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendNotification ndIdentiifer=ND-91C28E filePath=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf {} 
+2023-08-27 21:38:40.381 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com1, msgBody=<span style = 'color :red'> Purchase Order Id : </span>PID-0524B6
+Notification Id : ND-91C28E
+Buyer UserName : sarfarazalam
+Buyer Email : sarfarazalam2702@gmail.com
+Status : Pending
+Buy below item in pdf., subject=Regardig new item approval., attachment=C:\Final_Room_Management\Room_Management\DownloadPurchaseItemReport\202308272138\sarfarazalam.pdf)
+2023-08-27 21:38:40.381 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com yhvabyxetescsndm
+2023-08-27 21:38:40.381 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2023-08-27 21:38:44.865 [http-nio-2023-exec-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2023-08-27 21:39:19.364 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:39:24.190 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:39:24.191 [Thread-47] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:39:24.192 [Thread-47] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 21:39:24.197 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:39:24.200 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:39:24.206 [Thread-47] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:39:24.210 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2023-08-27 21:39:24.225 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2023-08-27 21:39:24.533 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:39:24.534 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:39:25.502 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:39:25.673 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:39:25.919 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:39:25.921 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:39:25.921 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:39:25.922 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:39:26.027 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:39:26.028 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1488 ms
+2023-08-27 21:39:26.231 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:39:26.253 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2023-08-27 21:39:26.319 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2023-08-27 21:39:26.320 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:39:26.625 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:39:26.626 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:39:27.362 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:39:27.677 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:39:27.687 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:39:27.725 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:39:27.735 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:39:27.763 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.328 seconds (JVM running for 1045.576)
+2023-08-27 21:39:27.769 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:42:10.769 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:42:17.042 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:17.043 [Thread-51] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:42:17.049 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:17.056 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:17.067 [Thread-51] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:17.073 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2023-08-27 21:42:17.120 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2023-08-27 21:42:17.504 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:42:17.505 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:42:18.755 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:42:18.900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:42:19.165 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:42:19.166 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:19.167 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:42:19.168 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:42:19.283 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:42:19.284 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1773 ms
+2023-08-27 21:42:19.531 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:42:19.551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2023-08-27 21:42:19.631 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2023-08-27 21:42:19.631 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:42:19.966 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:42:19.967 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:20.761 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:42:21.111 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:42:21.121 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:42:21.170 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:21.180 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:42:21.215 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.83 seconds (JVM running for 1219.029)
+2023-08-27 21:42:21.223 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:42:29.254 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:42:34.550 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:34.551 [Thread-55] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:42:34.555 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:34.560 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:34.566 [Thread-55] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:34.569 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2023-08-27 21:42:34.648 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2023-08-27 21:42:34.981 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:42:34.982 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:42:35.901 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:42:36.072 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:42:36.336 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:42:36.337 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:36.338 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:42:36.338 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:42:36.422 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:42:36.423 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1434 ms
+2023-08-27 21:42:36.650 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:42:36.676 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2023-08-27 21:42:36.742 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2023-08-27 21:42:36.742 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:42:37.029 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:42:37.030 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:37.635 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:42:37.968 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:42:37.977 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:42:38.021 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:38.030 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:42:38.063 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.187 seconds (JVM running for 1235.876)
+2023-08-27 21:42:38.067 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:42:39.535 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:42:45.020 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:45.020 [Thread-59] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:42:45.024 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:45.030 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:45.035 [Thread-59] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:45.039 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2023-08-27 21:42:45.070 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2023-08-27 21:42:45.382 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:42:45.383 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:42:46.298 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:42:46.445 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:42:46.717 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:42:46.718 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:46.719 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:42:46.720 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:42:46.811 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:42:46.811 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1424 ms
+2023-08-27 21:42:47.019 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:42:47.035 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2023-08-27 21:42:47.084 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2023-08-27 21:42:47.086 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:42:47.371 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:42:47.372 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:42:48.033 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:42:48.352 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:42:48.365 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:42:48.409 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:42:48.417 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:42:48.438 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.143 seconds (JVM running for 1246.251)
+2023-08-27 21:42:48.444 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:42:57.508 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:43:03.348 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:03.349 [Thread-63] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:43:03.359 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:03.365 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:03.373 [Thread-63] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:03.378 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2023-08-27 21:43:03.411 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2023-08-27 21:43:03.760 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:43:03.760 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:43:04.698 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:43:04.889 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 190 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:43:05.205 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:43:05.206 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:05.207 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:43:05.208 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:43:05.335 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:43:05.336 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1572 ms
+2023-08-27 21:43:05.572 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:43:05.614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2023-08-27 21:43:05.674 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2023-08-27 21:43:05.674 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:43:05.929 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:43:05.929 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:06.719 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:43:07.041 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:43:07.050 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:43:07.091 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:07.100 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:43:07.128 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.461 seconds (JVM running for 1264.941)
+2023-08-27 21:43:07.131 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:43:10.879 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:43:18.247 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:18.248 [Thread-67] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:43:18.252 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:18.256 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:18.260 [Thread-67] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:18.263 [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2023-08-27 21:43:18.291 [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2023-08-27 21:43:18.637 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:43:18.638 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:43:19.677 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:43:19.860 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 182 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:43:20.094 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:43:20.095 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:20.096 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:43:20.097 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:43:20.187 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:43:20.188 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+2023-08-27 21:43:20.390 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:43:20.408 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2023-08-27 21:43:20.507 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2023-08-27 21:43:20.508 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:43:20.828 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:43:20.828 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:21.465 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:43:21.799 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:43:21.807 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:43:21.840 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:21.850 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:43:21.874 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.356 seconds (JVM running for 1279.687)
+2023-08-27 21:43:21.882 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:43:25.712 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:43:34.695 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:34.696 [Thread-71] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:43:34.702 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:34.708 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:34.718 [Thread-71] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:34.722 [Thread-71] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+2023-08-27 21:43:34.820 [Thread-71] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+2023-08-27 21:43:35.798 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:43:35.822 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:43:38.741 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:43:39.067 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 324 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:43:39.525 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:43:39.528 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:39.529 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:43:39.529 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:43:39.772 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:43:39.789 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3952 ms
+2023-08-27 21:43:40.326 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:43:40.436 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+2023-08-27 21:43:40.768 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+2023-08-27 21:43:40.855 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:43:41.812 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:43:41.814 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:43.499 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:43:44.296 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:43:44.331 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:43:44.514 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:44.580 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:43:44.721 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 9.468 seconds (JVM running for 1302.534)
+2023-08-27 21:43:44.741 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-27 21:43:46.175 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-27 21:43:54.283 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:54.283 [Thread-75] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-27 21:43:54.288 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:54.294 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:54.301 [Thread-75] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:54.304 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+2023-08-27 21:43:54.328 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+2023-08-27 21:43:54.752 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 8344 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-27 21:43:54.754 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 21:43:55.856 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-27 21:43:56.058 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 8 JPA repository interfaces.
+2023-08-27 21:43:56.348 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-27 21:43:56.349 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:56.350 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-27 21:43:56.351 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-27 21:43:56.478 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-27 21:43:56.479 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1719 ms
+2023-08-27 21:43:56.766 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-27 21:43:56.791 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+2023-08-27 21:43:56.871 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+2023-08-27 21:43:56.873 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-27 21:43:57.388 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-27 21:43:57.389 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-27 21:43:59.159 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-27 21:43:59.809 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-27 21:43:59.822 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-27 21:43:59.881 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-27 21:43:59.896 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-27 21:43:59.938 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 5.314 seconds (JVM running for 1317.752)
+2023-08-27 21:43:59.946 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PurchaseItemDetail" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ad91ba35-9abd-483a-b71b-d23d81539ff2">
+	<parameter name="username" class="java.lang.String"/>
+	<parameter name="status" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="userId" class="java.lang.String"/>
+	<parameter name="groupName" class="java.lang.String"/>
+	<parameter name="purchaseId" class="java.lang.String"/>
+	<parameter name="paymentStatus" class="java.lang.String"/>
+	<parameter name="purchaseDate" class="java.lang.String"/>
+	<parameter name="modeOfPayment" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="itemName" class="java.lang.String"/>
+	<field name="price" class="java.lang.Double"/>
+	<field name="quantity" class="java.lang.Double"/>
+	<field name="unitPrice" class="java.lang.Double"/>
+	<field name="unitOfMeasurement" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="0" width="550" height="82" backcolor="#969393" uuid="b608e2da-4854-496c-8ea7-18842c7277d6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="60" y="26" width="400" height="44" uuid="424344cb-ff5d-4f04-955b-38ed5dac106b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ROOM MANAGEMENT]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="11" y="9" width="100" height="30" forecolor="#FAF3F2" uuid="17d56a3f-6190-44a2-a720-dbde4bcc733a"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="253" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="80" height="30" forecolor="#218A46" uuid="0162d6af-ed33-4686-9298-b6062c48ff06"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USER NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="20" width="80" height="30" forecolor="#218A46" uuid="5f82b9f7-4e93-429f-8a09-4a160c3ef0b3"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USER ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="70" width="78" height="30" forecolor="#218A46" uuid="e3a773a1-e6c1-4bad-9abd-8ce4df4902ae"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="20" width="80" height="30" forecolor="#218A46" uuid="5704791b-472d-45b3-a104-b4b423bfb587"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAYMENT STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="70" width="80" height="30" forecolor="#218A46" uuid="5d8dd1c2-82ee-407f-8155-fd9ea38b39cc"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PURCHASE DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="120" width="78" height="30" forecolor="#218A46" uuid="94ea7188-6e37-4ba5-969c-3e6fae289d50"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="120" width="80" height="30" forecolor="#218A46" uuid="553e8f54-3575-4513-ad17-0a6b597c9be9"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PURCHASE ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="120" width="80" height="30" forecolor="#218A46" uuid="32442c0f-577f-4c08-a5a8-f94876853207"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODE OF PAYMENT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="20" width="95" height="30" uuid="2e0129b3-ba71-4745-9e1d-e827712886ee"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="70" width="95" height="30" uuid="03675556-3802-4d29-b282-d8d17a858200"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{groupName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="70" width="95" height="30" uuid="a1d4389f-5677-4be5-a2bf-9d6f5551e93c"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="120" width="95" height="40" uuid="1ff882d0-a5ba-4a8e-8930-d8563fa989f2"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="20" width="95" height="30" uuid="1b17fb22-4abf-40b5-9bae-36f25ce09f6e"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{userId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="120" width="105" height="30" uuid="402a33fc-cfb8-48d6-9be0-3d93af2a26cd"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{purchaseId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="20" width="82" height="30" uuid="cd8592c3-8ff3-4120-982c-103eb66d96ff"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paymentStatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="70" width="83" height="30" uuid="3c71b5ed-f401-42e2-92b2-bf9414779421"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{purchaseDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="70" width="75" height="30" forecolor="#218A46" uuid="cf7b4d0a-5826-4574-b067-ebc280e2b945"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GROUP NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="120" width="83" height="30" uuid="e7c30061-33cc-40b8-8566-618fb4b544a2"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{modeOfPayment}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="180" width="552" height="1" forecolor="#A12725" backcolor="#961917" uuid="d0f07d31-c6d6-4763-b91e-d809f6d5e297"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="217" width="57" height="31" forecolor="#FA193E" uuid="d7a9eac8-dc43-46c9-9997-2130a69acd17"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="217" width="89" height="30" forecolor="#FA193E" uuid="d249c532-41da-4166-94ce-ccb11167ad63"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ITEM NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="218" width="87" height="30" forecolor="#FA193E" uuid="429c9e32-67c9-49a3-8fdb-90b84678dc56"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="218" width="79" height="30" forecolor="#FA193E" uuid="c1f7a49e-ca06-4422-ab7c-ad851ae0e7c6"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUANTITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="218" width="92" height="30" forecolor="#FA193E" uuid="b4cea4b1-6f19-40a7-9346-3e265faaa9ec"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIT PRICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="218" width="81" height="30" forecolor="#FA193E" uuid="6d9d9720-0a24-41a0-9c50-3763ac180a88"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIT OF MESUREMENT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="1" splitType="Stretch"/>
+		<band height="40">
+			<textField>
+				<reportElement x="2" y="-2" width="60" height="25" uuid="02a23da7-a37b-4c98-9145-4cdfaadbabd0"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="-4" width="90" height="29" uuid="dd7589c8-48d7-46d7-a86a-bf885d8fc648"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="-2" width="90" height="27" uuid="af087032-ad74-4b19-81c3-d2034aa281bc"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="-2" width="85" height="27" uuid="b9d51634-518a-4de2-a5f6-1e988dd3bf18"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="-4" width="81" height="29" uuid="552ca0de-5423-4165-ada5-7a875af0b32f"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unitPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="-4" width="64" height="27" uuid="e82ac7d8-a449-436a-853a-2b7c96085b14"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unitOfMeasurement}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="28" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="5" width="552" height="56" backcolor="#969393" uuid="7bf65a20-0869-48d0-9c78-45540dad9809"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="47" y="9" width="460" height="49" forecolor="#FAF7F7" uuid="6204e8d8-81d9-43df-a09c-4d16258288b8"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[This is system generated slip and does not require signature.Generated by Room Management.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

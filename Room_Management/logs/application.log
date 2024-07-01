@@ -1,0 +1,48 @@
+2024-06-30 00:00:00.014 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method processSheetToUpdateNotificationDetailStatus 
+2024-06-30 00:00:00.053 [scheduling-1] INFO  c.i.s.i.DocumentAttachmentServiceImpl - Inside the method getDocumentAttachmentListByStatus 
+2024-06-30 00:00:00.061 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - documentAttachmentList documentAttachmentList=[] documentAttachmentList size=0
+2024-06-30 00:00:00.065 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method updatePurchaseItemDetailStatus :
+2024-06-30 00:00:00.066 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method groupDataByPoIdentifier 
+2024-06-30 00:00:00.066 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findAll 
+2024-06-30 00:00:00.075 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After get the data from groupDataByPoIdentifier :
+2024-06-30 00:00:00.076 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the for loop poIdentifier=PO-42961D
+2024-06-30 00:00:00.077 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isApproved IsApproved=false
+2024-06-30 00:00:00.077 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - value of isCancelled isCancelled=false
+2024-06-30 00:00:00.077 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-30 00:00:00.084 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Purchase Item Detail Status : Status=Waiting for Approval
+2024-06-30 00:00:00.093 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method generateReport identifier=PO-42961D
+2024-06-30 00:00:00.095 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Download Path DownloadPath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\
+2024-06-30 00:00:00.095 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - sampleFilePath Detail  SampleFilePath=D:\Room_Management\Room_Management\Room_Management\target\classes\PurchaseItemDetail.jasper
+2024-06-30 00:00:00.095 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method findByIdentifier Identifier=PO-42961D
+2024-06-30 00:00:00.104 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - After set values in parameter  Parameter={groupName=Room, purchaseDate=2024-06-29, modeOfPayment=CASH, purchaseId=PO-42961D, userId=USER-5E00AA, email=vk9030210@gmail.com, paymentStatus=DONE, username=viveksingh, status=Waiting for Approval}
+2024-06-30 00:00:00.158 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Full file path and file name Full path =C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf
+2024-06-30 00:00:00.158 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the method createAttachment filepath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf Identifier=PO-42961D 
+2024-06-30 00:00:00.162 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Detail of files  fileName=viveksingh.pdf filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\ fileSize=399958339584
+2024-06-30 00:00:00.162 [scheduling-1] INFO  c.i.s.impl.AttachmentServiceImpl - Inside the method create UserRegisterationAttachment=Attachment(id=null, identifier=null, userName=viveksingh, fileName=viveksingh.pdf, filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\, fileSize=399958339584, userIdentifier=USER-5E00AA, pidIdentifier=PO-42961D, extension=pdf, createdDate=null, createdTime=null, modifiedDateTime=null)
+2024-06-30 00:00:00.169 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Inside the sendEmailNotification filePath=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf 
+2024-06-30 00:00:00.169 [scheduling-1] INFO  c.i.s.i.NotificationDetailServiceImpl - Inside the method findByPoIdentifier PoIdentifier :=PO-42961D
+2024-06-30 00:00:00.174 [scheduling-1] INFO  c.i.s.i.PurchaseItemDetailServiceImpl - Email List and GroupName :
+2024-06-30 00:00:00.174 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=sarfarazalam2702@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf)
+2024-06-30 00:00:00.175 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-30 00:00:00.176 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-30 00:00:04.906 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-30 00:00:04.907 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk9030210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf)
+2024-06-30 00:00:04.908 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-30 00:00:04.909 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-30 00:00:09.323 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......
+2024-06-30 00:00:09.324 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Inside the method sendMailWithAttachment of EmailDetailServiceImpl Details=EmailDetails(recipient=vk930210@gmail.com, msgBody=Purchase Order Id : PO-42961D
+Buyer UserName : viveksingh
+Buyer Email : vk9030210@gmail.com
+Status : Waiting for Approval
+Buy below item in pdf., subject=Regardig Status approval., attachment=C:\Final_Room_Management\Final_project\Room_Management\DownloadPurchaseItemReport\202406300000\viveksingh.pdf)
+2024-06-30 00:00:09.325 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Value of sender and pasword :sarfarazalam1825@gmail.com ccscixhkbfdtqzcy
+2024-06-30 00:00:09.326 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Iside the createSession method
+2024-06-30 00:00:14.117 [scheduling-1] INFO  c.i.s.impl.EmailDetailServiceImpl - Email sent successfully.......

@@ -1,0 +1,894 @@
+2023-08-28 01:54:23.133 [HikariPool-20 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-20 - Thread starvation or clock leap detected (housekeeper delta=4h4m56s68ms722µs500ns).
+2023-08-28 10:08:21.844 [HikariPool-20 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-20 - Thread starvation or clock leap detected (housekeeper delta=8h13m34s975ms165µs).
+2023-08-28 22:35:41.222 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-28 22:35:41.250 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 12804 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:35:41.253 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:35:41.320 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-28 22:35:41.321 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-28 22:35:42.676 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:35:42.820 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:35:45.392 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:35:45.398 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:35:45.401 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:35:45.402 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:35:45.535 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:35:45.536 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4214 ms
+2023-08-28 22:35:45.818 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:35:45.903 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-28 22:35:46.078 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-28 22:35:46.216 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-28 22:35:46.580 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-28 22:35:46.599 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:35:48.513 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:35:48.527 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:35:49.165 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationDetailControllerImpl': Unsatisfied dependency expressed through field 'notificationDetailService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationDetailServiceImpl': Unsatisfied dependency expressed through field 'notificationDetailRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'INotificationDetailRepository' defined in com.inn.repository.INotificationDetailRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String); Reason: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+2023-08-28 22:35:49.166 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:35:49.170 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-28 22:35:49.191 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-28 22:35:49.194 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:35:49.217 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-28 22:35:49.258 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationDetailControllerImpl': Unsatisfied dependency expressed through field 'notificationDetailService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationDetailServiceImpl': Unsatisfied dependency expressed through field 'notificationDetailRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'INotificationDetailRepository' defined in com.inn.repository.INotificationDetailRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String); Reason: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.inn.RoomManagementApplication.main(RoomManagementApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationDetailServiceImpl': Unsatisfied dependency expressed through field 'notificationDetailRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'INotificationDetailRepository' defined in com.inn.repository.INotificationDetailRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String); Reason: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'INotificationDetailRepository' defined in com.inn.repository.INotificationDetailRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String); Reason: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String); Reason: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1054)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231)
+	at org.springframework.data.util.Lazy.get(Lazy.java:115)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract com.inn.model.NotificationDetail com.inn.repository.INotificationDetailRepository.findByEmailAndNotificationIdentifier(java.lang.String,java.lang.String) but parameter 'Optional[em]' not found in annotated query 'select nd from NotificationDetail nd where nd.notificationReceiverEmailId=:un AND nd.identifier =:nd'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103)
+	... 71 common frames omitted
+2023-08-28 22:37:53.726 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-28 22:37:53.741 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:37:53.744 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:37:53.838 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-28 22:37:53.840 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-28 22:37:54.730 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:37:54.920 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:37:58.120 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:37:58.129 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:37:58.133 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:37:58.134 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:37:58.315 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:37:58.316 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4475 ms
+2023-08-28 22:37:58.657 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:37:58.740 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-28 22:37:58.985 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-28 22:37:59.172 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-28 22:37:59.496 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-28 22:37:59.511 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:38:00.823 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:38:00.837 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:38:01.665 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:38:02.213 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:38:02.222 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:38:02.259 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:38:02.297 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:38:02.322 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 9.036 seconds (JVM running for 9.783)
+2023-08-28 22:44:28.539 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-28 22:44:33.944 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:33.945 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:44:33.964 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:33.975 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:34.052 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:44:34.065 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-28 22:44:34.118 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-28 22:44:34.390 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:44:34.391 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:44:35.387 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:44:35.558 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:44:35.886 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:44:36.030 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:36.038 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:44:36.038 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:44:36.140 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:44:36.141 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+2023-08-28 22:44:36.328 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:44:36.351 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-08-28 22:44:36.421 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-08-28 22:44:36.423 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:44:36.942 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:44:36.943 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:44:37.725 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:44:38.074 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:44:38.085 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:44:38.120 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:38.131 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:44:38.168 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.906 seconds (JVM running for 405.63)
+2023-08-28 22:44:38.178 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:44:49.662 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:44:57.751 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:57.753 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:44:57.769 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:57.776 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:44:57.789 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:44:57.794 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-08-28 22:44:57.839 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-08-28 22:44:58.362 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:44:58.366 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:45:04.132 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:45:05.838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1702 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:45:08.677 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:45:08.737 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:45:08.788 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:45:08.808 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:45:09.768 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:45:09.779 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11401 ms
+2023-08-28 22:45:11.236 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:45:11.584 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-08-28 22:45:12.012 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-08-28 22:45:12.033 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:45:14.622 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:45:14.667 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:45:20.186 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:45:24.473 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:45:24.569 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:45:24.759 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:45:25.396 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:45:25.555 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 27.53 seconds (JVM running for 453.015)
+2023-08-28 22:45:25.694 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:45:28.023 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2023-08-28 22:45:57.367 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:45:57.371 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:45:57.392 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:45:57.405 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:45:57.433 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:45:57.442 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2023-08-28 22:45:57.492 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2023-08-28 22:45:58.336 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:45:58.356 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:46:00.831 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:46:01.267 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 434 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:46:01.819 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:46:01.822 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:01.823 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:46:01.824 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:46:02.048 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:46:02.050 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3628 ms
+2023-08-28 22:46:02.424 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:46:02.482 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2023-08-28 22:46:02.629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2023-08-28 22:46:02.634 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:46:03.871 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:46:03.921 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:46:06.426 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:46:07.353 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:46:07.378 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:46:07.461 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:07.512 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:46:07.586 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 9.874 seconds (JVM running for 495.048)
+2023-08-28 22:46:07.633 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:46:11.792 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:46:29.394 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:29.587 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:46:29.928 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:30.301 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:30.464 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:46:30.544 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2023-08-28 22:46:30.699 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2023-08-28 22:46:32.146 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:46:32.217 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:46:36.542 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:46:37.413 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 850 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:46:38.185 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:46:38.189 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:38.191 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:46:38.192 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:46:38.448 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:46:38.449 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6193 ms
+2023-08-28 22:46:38.728 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:46:38.757 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2023-08-28 22:46:38.825 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2023-08-28 22:46:38.826 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:46:39.290 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:46:39.294 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:46:41.152 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:46:42.183 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:46:42.218 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:46:42.336 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:42.365 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:46:42.452 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 10.999 seconds (JVM running for 529.914)
+2023-08-28 22:46:42.468 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:46:43.959 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-28 22:46:50.874 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:50.885 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:46:50.896 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:50.903 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:50.912 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:46:50.917 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2023-08-28 22:46:50.950 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2023-08-28 22:46:51.233 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:46:51.234 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:46:52.775 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:46:53.245 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 465 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:46:53.717 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:46:53.720 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:53.721 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:46:53.723 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:46:53.892 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:46:53.893 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2654 ms
+2023-08-28 22:46:54.142 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:46:54.170 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2023-08-28 22:46:54.232 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2023-08-28 22:46:54.233 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:46:54.625 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:46:54.626 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:46:55.670 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:46:56.217 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:46:56.231 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:46:56.297 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:46:56.311 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:46:56.360 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 5.263 seconds (JVM running for 543.822)
+2023-08-28 22:46:56.371 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:47:10.819 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:47:25.345 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:47:25.346 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:47:25.354 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:47:25.361 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:47:25.370 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:47:25.373 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2023-08-28 22:47:25.408 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2023-08-28 22:47:25.653 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:47:25.654 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:47:26.433 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:47:26.581 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:47:26.836 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:47:26.837 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:47:26.838 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:47:26.839 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:47:26.944 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:47:26.944 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1283 ms
+2023-08-28 22:47:27.120 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:47:27.138 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2023-08-28 22:47:27.199 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2023-08-28 22:47:27.200 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:47:27.552 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:47:27.553 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:47:28.218 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:47:28.469 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:47:28.475 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:47:28.507 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:47:28.518 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:47:28.539 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 2.989 seconds (JVM running for 576.002)
+2023-08-28 22:47:28.546 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:48:00.522 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:48:06.347 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:06.348 [Thread-27] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:48:06.359 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:06.364 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:06.371 [Thread-27] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:48:06.374 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2023-08-28 22:48:06.406 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2023-08-28 22:48:06.671 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:48:06.672 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:48:07.719 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:48:07.966 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 246 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:48:08.235 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:48:08.237 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:08.238 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:48:08.238 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:48:08.336 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:48:08.337 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1660 ms
+2023-08-28 22:48:08.504 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:48:08.528 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2023-08-28 22:48:08.598 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2023-08-28 22:48:08.600 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:48:09.013 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:48:09.014 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:48:09.775 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:48:10.153 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:48:10.163 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:48:10.205 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:10.215 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:48:10.248 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.691 seconds (JVM running for 617.71)
+2023-08-28 22:48:10.256 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:48:21.148 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:48:35.361 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:35.363 [Thread-31] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:48:35.377 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:35.385 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:35.399 [Thread-31] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:48:35.411 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2023-08-28 22:48:35.456 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2023-08-28 22:48:35.950 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:48:35.952 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:48:37.824 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:48:38.178 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 353 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:48:38.585 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:48:38.587 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:38.588 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:48:38.588 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:48:38.726 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:48:38.726 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2760 ms
+2023-08-28 22:48:39.065 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:48:39.141 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2023-08-28 22:48:39.341 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2023-08-28 22:48:39.364 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:48:40.260 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:48:40.265 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:48:42.656 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:48:43.713 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:48:43.736 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:48:43.832 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:43.858 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:48:43.945 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 8.234 seconds (JVM running for 651.407)
+2023-08-28 22:48:43.974 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:48:45.396 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:48:55.168 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:55.170 [Thread-35] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:48:55.181 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:55.189 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:55.202 [Thread-35] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:48:55.207 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2023-08-28 22:48:55.243 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2023-08-28 22:48:55.607 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:48:55.608 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:48:57.330 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:48:57.703 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 371 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:48:58.270 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:48:58.273 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:48:58.274 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:48:58.275 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:48:58.430 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:48:58.431 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2813 ms
+2023-08-28 22:48:58.745 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:48:58.807 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2023-08-28 22:48:58.969 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2023-08-28 22:48:58.972 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:48:59.683 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:48:59.684 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:49:01.392 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:49:02.480 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:49:02.502 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:49:02.600 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:02.630 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:49:02.757 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 7.315 seconds (JVM running for 670.219)
+2023-08-28 22:49:02.770 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:49:23.948 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:49:33.242 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:33.245 [Thread-39] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:49:33.270 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:33.292 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:33.321 [Thread-39] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:49:33.327 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2023-08-28 22:49:33.376 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2023-08-28 22:49:34.004 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:49:34.016 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:49:36.594 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:49:37.094 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 498 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:49:37.585 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:49:37.588 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:37.589 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:49:37.590 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:49:37.758 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:49:37.758 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3689 ms
+2023-08-28 22:49:38.321 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:49:38.373 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2023-08-28 22:49:38.484 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2023-08-28 22:49:38.486 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:49:39.553 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:49:39.583 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:49:41.413 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:49:42.052 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:49:42.069 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:49:42.132 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:49:42.151 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:49:42.203 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 8.525 seconds (JVM running for 709.665)
+2023-08-28 22:49:42.212 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:49:49.595 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:50:02.984 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:50:02.985 [Thread-43] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:50:02.996 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:50:03.005 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:50:03.016 [Thread-43] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:50:03.021 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2023-08-28 22:50:03.061 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2023-08-28 22:50:03.426 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:50:03.427 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:50:04.982 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:50:05.293 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 309 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:50:05.930 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:50:05.932 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:50:05.934 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:50:05.934 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:50:06.125 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:50:06.125 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2690 ms
+2023-08-28 22:50:06.640 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:50:06.681 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2023-08-28 22:50:06.824 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2023-08-28 22:50:06.827 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:50:07.730 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:50:07.732 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:50:09.062 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:50:09.622 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:50:09.637 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:50:09.692 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:50:09.707 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:50:09.764 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 6.487 seconds (JVM running for 737.226)
+2023-08-28 22:50:09.777 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:52:13.935 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-28 22:52:19.808 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:19.808 [Thread-47] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:52:19.819 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:19.828 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:19.836 [Thread-47] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:52:19.843 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2023-08-28 22:52:19.908 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2023-08-28 22:52:20.422 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:52:20.424 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:52:25.472 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:52:26.032 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 539 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:52:27.094 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:52:27.170 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:27.299 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:52:27.407 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:52:28.051 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:52:28.065 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7632 ms
+2023-08-28 22:52:28.684 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:52:28.758 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2023-08-28 22:52:28.899 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2023-08-28 22:52:28.913 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:52:30.161 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:52:30.213 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:52:33.791 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:52:35.688 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:52:35.757 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:52:35.924 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:35.977 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:52:36.065 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 15.896 seconds (JVM running for 883.526)
+2023-08-28 22:52:36.136 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:52:37.661 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:52:52.435 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:52.553 [Thread-51] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:52:52.819 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:53.021 [Thread-51] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:53.046 [Thread-51] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:52:53.054 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2023-08-28 22:52:53.145 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2023-08-28 22:52:53.834 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:52:53.836 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:52:55.386 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:52:55.600 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 213 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:52:55.997 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:52:55.999 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:52:56.002 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:52:56.004 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:52:56.155 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:52:56.162 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2311 ms
+2023-08-28 22:52:56.458 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:52:56.494 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2023-08-28 22:52:56.584 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2023-08-28 22:52:56.585 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:52:57.439 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:52:57.440 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:52:59.206 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:53:00.315 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:53:00.425 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:53:00.701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:00.935 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:53:01.518 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 7.947 seconds (JVM running for 908.98)
+2023-08-28 22:53:01.616 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:53:23.546 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2023-08-28 22:53:42.061 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:42.063 [Thread-55] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:53:42.071 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:42.078 [Thread-55] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:42.087 [Thread-55] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:53:42.096 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2023-08-28 22:53:42.132 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2023-08-28 22:53:42.444 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:53:42.445 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:53:43.541 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:53:43.724 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:53:44.074 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:53:44.076 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:44.076 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:53:44.077 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:53:44.210 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:53:44.210 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1759 ms
+2023-08-28 22:53:44.459 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:53:44.481 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2023-08-28 22:53:44.556 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2023-08-28 22:53:44.557 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:53:44.883 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:53:44.927 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:53:45.816 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:53:46.168 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:53:46.179 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:53:46.224 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:46.234 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:53:46.258 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.93 seconds (JVM running for 953.72)
+2023-08-28 22:53:46.263 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:53:47.763 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:53:53.531 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:53.531 [Thread-59] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:53:53.541 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:53.547 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:53.556 [Thread-59] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:53:53.559 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2023-08-28 22:53:53.588 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2023-08-28 22:53:53.932 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:53:53.933 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:53:54.979 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:53:55.165 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 185 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:53:55.471 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:53:55.474 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:55.474 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:53:55.475 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:53:55.614 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:53:55.615 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1677 ms
+2023-08-28 22:53:55.904 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:53:55.936 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2023-08-28 22:53:56.011 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2023-08-28 22:53:56.013 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:53:56.355 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:53:56.356 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:53:57.215 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:53:57.678 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:53:57.693 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:53:57.737 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:53:57.749 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:53:57.782 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.995 seconds (JVM running for 965.244)
+2023-08-28 22:53:57.787 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:54:13.522 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:54:18.958 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:54:18.959 [Thread-63] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:54:18.969 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:54:18.976 [Thread-63] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:54:18.983 [Thread-63] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:54:18.988 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2023-08-28 22:54:19.020 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2023-08-28 22:54:19.313 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:54:19.315 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:54:20.308 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:54:20.463 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:54:20.700 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:54:20.701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:54:20.702 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:54:20.703 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:54:20.814 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:54:20.814 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1454 ms
+2023-08-28 22:54:21.039 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:54:21.054 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2023-08-28 22:54:21.110 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2023-08-28 22:54:21.111 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:54:21.442 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:54:21.443 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:54:22.234 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:54:22.545 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:54:22.558 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:54:22.604 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:54:22.615 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:54:22.643 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.419 seconds (JVM running for 990.105)
+2023-08-28 22:54:22.647 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:56:23.478 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-28 22:56:28.973 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:28.974 [Thread-67] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:56:28.983 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:28.989 [Thread-67] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:28.997 [Thread-67] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:56:29.002 [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2023-08-28 22:56:29.052 [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2023-08-28 22:56:29.496 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:56:29.496 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:56:30.451 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:56:30.594 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:56:30.831 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:56:30.833 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:30.834 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:56:30.834 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:56:30.969 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:56:30.971 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1468 ms
+2023-08-28 22:56:31.165 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:56:31.180 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2023-08-28 22:56:31.255 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2023-08-28 22:56:31.256 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:56:31.580 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:56:31.581 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:56:32.402 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:56:32.717 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:56:32.726 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:56:32.768 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:32.779 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:56:32.803 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.462 seconds (JVM running for 1120.265)
+2023-08-28 22:56:32.809 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:56:34.312 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:56:39.433 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:39.434 [Thread-71] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:56:39.442 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:39.447 [Thread-71] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:39.455 [Thread-71] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:56:39.458 [Thread-71] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+2023-08-28 22:56:39.489 [Thread-71] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+2023-08-28 22:56:39.784 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:56:39.785 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:56:40.601 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:56:40.765 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:56:41.003 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:56:41.005 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:41.006 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:56:41.006 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:56:41.101 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:56:41.102 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+2023-08-28 22:56:41.291 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:56:41.316 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+2023-08-28 22:56:41.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+2023-08-28 22:56:41.371 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:56:41.653 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:56:41.653 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:56:42.415 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:56:42.711 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:56:42.716 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:56:42.748 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:56:42.755 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:56:42.781 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.084 seconds (JVM running for 1130.243)
+2023-08-28 22:56:42.787 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:57:27.984 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:57:33.384 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:33.385 [Thread-75] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:57:33.394 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:33.401 [Thread-75] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:33.407 [Thread-75] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:57:33.410 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+2023-08-28 22:57:33.449 [Thread-75] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+2023-08-28 22:57:33.806 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:57:33.807 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:57:35.085 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:57:35.266 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:57:35.583 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:57:35.586 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:35.587 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:57:35.588 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:57:35.861 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:57:35.861 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2048 ms
+2023-08-28 22:57:36.110 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:57:36.127 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+2023-08-28 22:57:36.184 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+2023-08-28 22:57:36.185 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:57:36.526 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:57:36.528 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:57:37.751 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:57:38.137 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:57:38.156 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:57:38.197 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:38.205 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:57:38.232 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 4.53 seconds (JVM running for 1185.694)
+2023-08-28 22:57:38.237 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:57:46.384 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:57:52.103 [Thread-79] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:52.104 [Thread-79] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:57:52.114 [Thread-79] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:52.120 [Thread-79] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:52.125 [Thread-79] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:57:52.128 [Thread-79] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+2023-08-28 22:57:52.149 [Thread-79] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+2023-08-28 22:57:52.449 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:57:52.450 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:57:53.491 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:57:53.658 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:57:53.950 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:57:53.954 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:53.955 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:57:53.956 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:57:54.136 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:57:54.137 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1682 ms
+2023-08-28 22:57:54.460 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:57:54.487 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Starting...
+2023-08-28 22:57:54.554 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Start completed.
+2023-08-28 22:57:54.556 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:57:54.955 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:57:54.968 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:57:55.893 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:57:56.303 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:57:56.312 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:57:56.339 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:57:56.346 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:57:56.364 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 4.018 seconds (JVM running for 1203.826)
+2023-08-28 22:57:56.368 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:57:57.910 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:58:03.667 [Thread-83] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:03.668 [Thread-83] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:58:03.679 [Thread-83] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:03.684 [Thread-83] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:03.692 [Thread-83] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:03.697 [Thread-83] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown initiated...
+2023-08-28 22:58:03.733 [Thread-83] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown completed.
+2023-08-28 22:58:04.120 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:58:04.121 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:58:05.109 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:58:05.272 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:58:05.499 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:58:05.500 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:05.501 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:58:05.502 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:58:05.599 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:58:05.600 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1470 ms
+2023-08-28 22:58:05.825 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:58:05.850 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Starting...
+2023-08-28 22:58:05.937 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Start completed.
+2023-08-28 22:58:05.938 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:58:06.279 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:58:06.280 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:06.972 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:58:07.272 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:58:07.280 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:58:07.316 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:07.324 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:58:07.352 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.355 seconds (JVM running for 1214.813)
+2023-08-28 22:58:07.356 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:58:16.525 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-28 22:58:21.914 [Thread-87] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:21.915 [Thread-87] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:58:21.924 [Thread-87] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:21.930 [Thread-87] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:21.936 [Thread-87] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:21.940 [Thread-87] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Shutdown initiated...
+2023-08-28 22:58:21.975 [Thread-87] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Shutdown completed.
+2023-08-28 22:58:22.292 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:58:22.293 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:58:23.255 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:58:23.415 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:58:23.632 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:58:23.633 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:23.633 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:58:23.634 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:58:23.733 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:58:23.734 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1437 ms
+2023-08-28 22:58:23.976 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:58:23.999 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Starting...
+2023-08-28 22:58:24.057 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Start completed.
+2023-08-28 22:58:24.057 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:58:24.352 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:58:24.353 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:25.078 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:58:25.318 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:58:25.326 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:58:25.362 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:25.370 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:58:25.391 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.193 seconds (JVM running for 1232.854)
+2023-08-28 22:58:25.395 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:58:26.897 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:58:32.439 [Thread-91] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:32.439 [Thread-91] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:58:32.446 [Thread-91] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:32.449 [Thread-91] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:32.455 [Thread-91] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:32.458 [Thread-91] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Shutdown initiated...
+2023-08-28 22:58:32.481 [Thread-91] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Shutdown completed.
+2023-08-28 22:58:32.773 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:58:32.773 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:58:33.672 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:58:33.850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:58:34.114 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:58:34.116 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:34.116 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:58:34.117 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:58:34.239 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:58:34.239 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1461 ms
+2023-08-28 22:58:34.473 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:58:34.493 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Starting...
+2023-08-28 22:58:34.555 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Start completed.
+2023-08-28 22:58:34.555 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:58:34.854 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:58:34.855 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:35.661 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:58:36.070 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:58:36.082 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:58:36.122 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:36.133 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:58:36.163 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.477 seconds (JVM running for 1243.625)
+2023-08-28 22:58:36.168 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 22:58:37.652 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-28 22:58:43.816 [Thread-95] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:43.817 [Thread-95] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-28 22:58:43.827 [Thread-95] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:43.832 [Thread-95] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:43.841 [Thread-95] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:43.844 [Thread-95] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Shutdown initiated...
+2023-08-28 22:58:43.884 [Thread-95] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Shutdown completed.
+2023-08-28 22:58:44.237 [restartedMain] INFO  com.inn.RoomManagementApplication - Starting RoomManagementApplication using Java 11.0.12 on RINIPC583 with PID 15752 (C:\Final_Room_Management\Room_Management\Room_Management\target\classes started by sarfaraz.alam in C:\Final_Room_Management\Room_Management\Room_Management)
+2023-08-28 22:58:44.238 [restartedMain] INFO  com.inn.RoomManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-28 22:58:45.272 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28 22:58:45.439 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 8 JPA repository interfaces.
+2023-08-28 22:58:45.655 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2023 (http)
+2023-08-28 22:58:45.656 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:45.657 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-28 22:58:45.657 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-08-28 22:58:45.738 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-28 22:58:45.738 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1494 ms
+2023-08-28 22:58:45.943 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28 22:58:45.971 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Starting...
+2023-08-28 22:58:46.068 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Start completed.
+2023-08-28 22:58:46.069 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-08-28 22:58:46.381 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28 22:58:46.382 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28 22:58:47.148 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-28 22:58:47.461 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-28 22:58:47.471 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-28 22:58:47.502 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2023"]
+2023-08-28 22:58:47.513 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2023 (http) with context path ''
+2023-08-28 22:58:47.548 [restartedMain] INFO  com.inn.RoomManagementApplication - Started RoomManagementApplication in 3.401 seconds (JVM running for 1255.01)
+2023-08-28 22:58:47.554 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-28 23:06:32.769 [HikariPool-25 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-25 - Thread starvation or clock leap detected (housekeeper delta=1m46s524ms4µs700ns).
